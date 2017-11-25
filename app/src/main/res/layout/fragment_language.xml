@@ -1,0 +1,105 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bggrey"
+    tools:context="com.dtucolab.myapplication.LanguageFragment">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="458dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="321dp"
+        android:layout_marginStart="322dp"
+        android:layout_marginTop="28dp"
+        android:text="4. Hvilket sprog?"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="325dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="507dp"
+        android:layout_marginStart="448dp"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/german"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="325dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/french"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton6"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="325dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/danish"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="325dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="73dp"
+        android:text="Dansk"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton8" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="325dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="507dp"
+        android:layout_marginStart="448dp"
+        android:text="Tysk"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton6" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="325dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginStart="50dp"
+        android:text="Fransk"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton7" />
+
+
+</android.support.constraint.ConstraintLayout>

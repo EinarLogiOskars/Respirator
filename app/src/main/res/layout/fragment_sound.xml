@@ -1,0 +1,102 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bggrey"
+    tools:context="com.dtucolab.myapplication.SoundFragment">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="637dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="321dp"
+        android:layout_marginStart="322dp"
+        android:layout_marginTop="64dp"
+        android:text="2. Hvor høj alarmen være?"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="325dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/sound1"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="325dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/sound3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton3"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="325dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="507dp"
+        android:layout_marginStart="448dp"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/sound2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="325dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="72dp"
+        android:text="Standard"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="325dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="506dp"
+        android:layout_marginStart="449dp"
+        android:text="Mellem"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="325dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginStart="50dp"
+        android:text="Max"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+
+</android.support.constraint.ConstraintLayout>
