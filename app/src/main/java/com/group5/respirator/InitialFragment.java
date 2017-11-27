@@ -26,7 +26,7 @@ public class InitialFragment extends Fragment {
         // Required empty public constructor
     }
 
-    public static InitialFragment newInstance(String param1, String param2) {
+    public static InitialFragment newInstance() {
         InitialFragment fragment = new InitialFragment();
         return fragment;
     }

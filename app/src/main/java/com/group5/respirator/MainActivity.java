@@ -18,11 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-        SettingsActivity bla = new SettingsActivity();
-
-
-
-        Intent intent = new Intent(this, SettingsActivity.class);
+        Intent intent = new Intent(this, Communication_akt.class);
 
         startActivity(intent);
     }
