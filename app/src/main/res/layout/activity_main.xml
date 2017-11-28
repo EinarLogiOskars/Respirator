@@ -4,38 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/BackgroundGrey"
     tools:context="com.group5.respirator.MainActivity">
 
-    <TextView
-        android:layout_width="111dp"
-        android:layout_height="111dp"
-        android:text="Hello World!"
+    <Button
+        android:id="@+id/callBtn"
+        android:layout_width="1281dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="627dp"
+        android:background="@drawable/button1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        android:id="@+id/textView"
-        tools:layout_constraintLeft_creator="1" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:srcCompat="@mipmap/ic_launcher"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="16dp"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="17dp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/settingBtn"
+        android:layout_width="100dp"
+        android:layout_height="109dp"
+        android:layout_marginBottom="502dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="1164dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/setting_btn"
+        android:onClick="settings"
+        app:layout_constraintBottom_toTopOf="@+id/callBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/comBtn"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="137dp"
+        android:layout_marginEnd="830dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="190dp"
+        android:background="@drawable/com_btn"
+        app:layout_constraintBottom_toTopOf="@+id/callBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="communication"/>
+
+    <Button
+        android:id="@+id/entBtn"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="137dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginStart="830dp"
+        android:layout_marginTop="190dp"
+        android:background="@drawable/ent_btn"
+        app:layout_constraintBottom_toTopOf="@+id/callBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="entertainment"/>
 
 </android.support.constraint.ConstraintLayout>

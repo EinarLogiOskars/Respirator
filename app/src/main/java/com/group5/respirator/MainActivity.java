@@ -3,6 +3,7 @@ package com.group5.respirator;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
@@ -18,8 +19,27 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-        Intent intent = new Intent(this, SpilScreen.class);
 
-        startActivity(intent);
+    }
+
+    public void communication(View view) {
+
+        Intent comIntent = new Intent(this, Communication_akt.class);
+        startActivity(comIntent);
+
+    }
+
+    public void entertainment(View view) {
+
+        Intent entIntent = new Intent(this, SpilScreen.class);
+        startActivity(entIntent);
+
+    }
+
+    public void settings(View view) {
+
+        Intent settingsIntent = new Intent(this, SettingsActivity.class);
+        startActivity(settingsIntent);
+
     }
 }
