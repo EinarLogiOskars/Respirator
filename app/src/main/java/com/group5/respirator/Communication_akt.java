@@ -6,23 +6,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class Communication_akt extends AppCompatActivity {
-
-    Button btn;
-
+public class Communication_akt extends AppCompatActivity
+{
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_communication);
-
-        btn = (Button) findViewById(R.id.button2);
-
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "Blablabla", Toast.LENGTH_LONG).show();
-            }
-        });
-
     }
 }
