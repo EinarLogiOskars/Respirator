@@ -105,31 +105,36 @@
         app:layout_constraintStart_toStartOf="parent" />
 
 
-
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/homeBtn"
         android:layout_width="75dp"
         android:layout_height="71dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="340dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginStart="1178dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/button8"
         android:gravity="bottom|center"
+        android:onClick="home"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.984"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="78dp"
-        android:layout_height="30dp"
-        android:layout_marginEnd="24dp"
+        android:layout_width="75dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="322dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginStart="1178dp"
         android:text="Home"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeBtn" />
 
 </android.support.constraint.ConstraintLayout>
