@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class SettingsActivity extends AppCompatActivity {
@@ -36,6 +37,10 @@ public class SettingsActivity extends AppCompatActivity {
 
     }
 
+    /*
+    This function displays the touch setting fragment when you click the touch setting button.
+    The original function call is created in the xml declaration for the button in activity_settings.xml
+     */
     public void touchSettings(View view) {
 
         if (textView1.getVisibility() == View.VISIBLE) {
@@ -47,7 +52,6 @@ public class SettingsActivity extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.fragment_container, touchFrag);
         fragmentTransaction.commit();
-
 
     }
 
