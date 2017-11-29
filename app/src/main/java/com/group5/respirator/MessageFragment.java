@@ -1,7 +1,6 @@
 package com.group5.respirator;
 
-import android.content.Context;
-import android.net.Uri;
+
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -39,17 +38,24 @@ public class MessageFragment extends Fragment implements View.OnClickListener
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_message, container, false);
 
+        return inflater.inflate(R.layout.fragment_message, container, false);
+
+    }
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
         Message = (EditText) view.findViewById(R.id.PatientMessage);
         EraseButton = (Button) view.findViewById(R.id.EraseButton);
 
         EraseButton.setOnClickListener(this);
 
-        return inflater.inflate(R.layout.fragment_message, container, false);
     }
 
     @Override
     public void onClick(View view)
     {
-        Message.getText().clear();
+        Message.setText("");
     }
 }
