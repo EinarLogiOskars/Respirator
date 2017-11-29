@@ -11,6 +11,15 @@ import android.widget.TextView;
 
 public class Communication_akt extends AppCompatActivity
 {
+
+    ActionsFragment ActionFrag;
+    DisplayPainFragment DisplayPainFrag;
+    FeelingtStatusFragment FeelingFrag;
+    MessageFragment MessageFrag;
+    QuestionFragment QuestionFrag;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
