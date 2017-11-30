@@ -1,4 +1,4 @@
-package com.group5.respirator.Entertainment;
+package com.group5.respirator.Entertainment.Fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,15 +9,16 @@ import android.view.ViewGroup;
 import com.group5.respirator.R;
 
 
-public class TicTacToeFragment extends Fragment {
+public class QuizFragment extends Fragment {
 
-    public TicTacToeFragment() {
+
+    public QuizFragment() {
         // Required empty public constructor
     }
 
 
-    public static TicTacToeFragment newInstance() {
-        TicTacToeFragment fragment = new TicTacToeFragment();
+    public static QuizFragment newInstance() {
+        QuizFragment fragment = new QuizFragment();
         return fragment;
     }
 
@@ -30,8 +31,7 @@ public class TicTacToeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tic_tac_toe, container, false);
+        return inflater.inflate(R.layout.fragment_quiz, container, false);
     }
-
 
 }

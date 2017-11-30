@@ -5,9 +5,15 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 import com.group5.respirator.R;
+import com.group5.respirator.Settings.Fragments.LanguageFragment;
+import com.group5.respirator.Settings.Fragments.SoundFragment;
+import com.group5.respirator.Settings.Fragments.TextSizeFragment;
+import com.group5.respirator.Settings.Fragments.TouchFragment;
 
 public class SettingsActivity extends AppCompatActivity {
 
@@ -24,6 +30,10 @@ public class SettingsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_settings);
 
         fragmentManager = getSupportFragmentManager();

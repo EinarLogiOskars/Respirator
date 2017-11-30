@@ -5,8 +5,15 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.TextView;
 
+import com.group5.respirator.Communication.Fragments.ActionsFragment;
+import com.group5.respirator.Communication.Fragments.DisplayPainFragment;
+import com.group5.respirator.Communication.Fragments.FeelingtStatusFragment;
+import com.group5.respirator.Communication.Fragments.MessageFragment;
+import com.group5.respirator.Communication.Fragments.QuestionFragment;
 import com.group5.respirator.R;
 
 
@@ -27,6 +34,10 @@ public class Communication_akt extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_communication);
 
         fragmentManager = getSupportFragmentManager();

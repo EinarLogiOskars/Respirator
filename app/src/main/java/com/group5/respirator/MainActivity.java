@@ -1,4 +1,4 @@
-package com.group5.respirator.Settings;
+package com.group5.respirator;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,7 @@ import android.view.WindowManager;
 import com.group5.respirator.Communication.Communication_akt;
 import com.group5.respirator.Entertainment.EntertainmentScreen;
 import com.group5.respirator.R;
+import com.group5.respirator.Settings.SettingsActivity;
 
 public class MainActivity extends AppCompatActivity {
 

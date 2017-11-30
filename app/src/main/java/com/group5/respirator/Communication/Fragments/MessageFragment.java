@@ -1,4 +1,4 @@
-package com.group5.respirator.Communication;
+package com.group5.respirator.Communication.Fragments;
 
 
 import android.os.Bundle;
