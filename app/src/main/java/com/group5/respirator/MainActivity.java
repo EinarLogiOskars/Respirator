@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void entertainment(View view) {
 
-        Intent entIntent = new Intent(this, SpilScreen.class);
+        Intent entIntent = new Intent(this, EntertainmentScreen.class);
         startActivity(entIntent);
 
     }
