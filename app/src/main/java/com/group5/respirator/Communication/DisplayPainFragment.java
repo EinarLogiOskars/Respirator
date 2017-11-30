@@ -1,4 +1,4 @@
-package com.group5.respirator;
+package com.group5.respirator.Communication;
 
 
 import android.os.Bundle;
@@ -7,18 +7,20 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.group5.respirator.R;
 
-public class ActionsFragment extends Fragment
+
+public class DisplayPainFragment extends Fragment
 {
 
-    public ActionsFragment()
+    public DisplayPainFragment()
     {
         // Required empty public constructor
     }
 
-    public static ActionsFragment newInstance()
+    public static DisplayPainFragment newInstance()
     {
-        ActionsFragment fragment = new ActionsFragment();
+        DisplayPainFragment fragment = new DisplayPainFragment();
         return fragment;
     }
 
@@ -32,7 +34,7 @@ public class ActionsFragment extends Fragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_actions, container, false);
+        return inflater.inflate(R.layout.fragment_display_pain, container, false);
     }
 
 }

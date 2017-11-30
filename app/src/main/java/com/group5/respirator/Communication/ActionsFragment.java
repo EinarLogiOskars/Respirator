@@ -1,4 +1,4 @@
-package com.group5.respirator;
+package com.group5.respirator.Communication;
 
 
 import android.os.Bundle;
@@ -7,23 +7,26 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.group5.respirator.R;
 
 
-public class SoundFragment extends Fragment {
+public class ActionsFragment extends Fragment
+{
 
-
-    public SoundFragment() {
+    public ActionsFragment()
+    {
         // Required empty public constructor
     }
 
-
-    public static SoundFragment newInstance() {
-        SoundFragment fragment = new SoundFragment();
+    public static ActionsFragment newInstance()
+    {
+        ActionsFragment fragment = new ActionsFragment();
         return fragment;
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
     }
 
@@ -31,7 +34,7 @@ public class SoundFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_sound, container, false);
+        return inflater.inflate(R.layout.fragment_actions, container, false);
     }
 
 }

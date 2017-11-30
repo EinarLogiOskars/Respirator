@@ -1,4 +1,4 @@
-package com.group5.respirator;
+package com.group5.respirator.Communication;
 
 
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.group5.respirator.R;
 
 public class MessageFragment extends Fragment implements View.OnClickListener
 {

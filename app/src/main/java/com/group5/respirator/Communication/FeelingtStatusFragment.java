@@ -1,5 +1,4 @@
-package com.group5.respirator;
-
+package com.group5.respirator.Communication;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -7,18 +6,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.group5.respirator.R;
 
-public class DisplayPainFragment extends Fragment
-{
 
-    public DisplayPainFragment()
+public class FeelingtStatusFragment extends Fragment {
+
+    public FeelingtStatusFragment()
     {
         // Required empty public constructor
     }
 
-    public static DisplayPainFragment newInstance()
+    public static FeelingtStatusFragment newInstance()
     {
-        DisplayPainFragment fragment = new DisplayPainFragment();
+        FeelingtStatusFragment fragment = new FeelingtStatusFragment();
         return fragment;
     }
 
@@ -32,7 +32,6 @@ public class DisplayPainFragment extends Fragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_display_pain, container, false);
+        return inflater.inflate(R.layout.fragment_feelingt_status, container, false);
     }
-
 }

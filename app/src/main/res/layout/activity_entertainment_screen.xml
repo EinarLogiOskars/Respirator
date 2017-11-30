@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/BackgroundGrey"
-    tools:context="com.group5.respirator.EntertainmentScreen"
+    tools:context="com.group5.respirator.Entertainment.EntertainmentScreen"
     tools:layout_editor_absoluteY="25dp">
 
     <android.support.constraint.ConstraintLayout

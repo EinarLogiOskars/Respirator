@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.group5.respirator.MainActivity"
+            android:name="com.group5.respirator.Settings.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,9 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.group5.respirator.Communication_akt" />
-        <activity android:name="com.group5.respirator.SettingsActivity" />
-        <activity android:name="com.group5.respirator.EntertainmentScreen" />
+        <activity android:name="com.group5.respirator.Communication.Communication_akt" />
+        <activity android:name="com.group5.respirator.Settings.SettingsActivity" />
+        <activity android:name="com.group5.respirator.Entertainment.EntertainmentScreen" />
     </application>
 
 </manifest>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/BackgroundGrey"
-    tools:context="com.group5.respirator.MainActivity">
+    tools:context="com.group5.respirator.Settings.MainActivity">
 
     <Button
         android:id="@+id/callBtn"

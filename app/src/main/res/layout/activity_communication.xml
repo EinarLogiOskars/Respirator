@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/BackgroundGrey"
-    tools:context="com.group5.respirator.Communication_akt"
+    tools:context="com.group5.respirator.Communication.Communication_akt"
     tools:layout_editor_absoluteY="25dp">
 
     <android.support.constraint.ConstraintLayout

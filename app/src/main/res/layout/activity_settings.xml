@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bggrey"
-    tools:context="com.group5.respirator.SettingsActivity">
+    tools:context="com.group5.respirator.Settings.SettingsActivity">
 
     <Button
         android:id="@+id/homeBtn"

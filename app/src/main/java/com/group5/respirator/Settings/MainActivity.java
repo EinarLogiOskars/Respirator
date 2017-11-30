@@ -1,12 +1,15 @@
-package com.group5.respirator;
+package com.group5.respirator.Settings;
 
-import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+
+import com.group5.respirator.Communication.Communication_akt;
+import com.group5.respirator.Entertainment.EntertainmentScreen;
+import com.group5.respirator.R;
 
 public class MainActivity extends AppCompatActivity {
 

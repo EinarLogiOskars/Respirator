@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/BackgroundGrey"
-    tools:context="com.group5.respirator.FeelingtStatusFragment">
+    tools:context="com.group5.respirator.Communication.FeelingtStatusFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
