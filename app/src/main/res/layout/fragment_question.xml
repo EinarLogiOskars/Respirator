@@ -12,12 +12,12 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="48dp"
-        android:layout_marginEnd="859dp"
-        android:layout_marginTop="296dp"
-        android:background="@drawable/WhatAreYouDoing"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginBottom="113dp"
+        android:layout_marginEnd="752dp"
+        android:layout_marginTop="239dp"
+        android:background="@drawable/whatareyoudoing"
         app:layout_constraintBottom_toTopOf="@+id/button9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,13 +25,13 @@
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="48dp"
-        android:layout_marginEnd="81dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="296dp"
-        android:background="@drawable/WhatsIstheTime"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginBottom="113dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="239dp"
+        android:background="@drawable/whatsisthetime"
         app:layout_constraintBottom_toTopOf="@+id/button10"
         app:layout_constraintEnd_toStartOf="@+id/button"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,22 +39,22 @@
 
     <Button
         android:id="@+id/button9"
-        android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="183dp"
-        android:layout_marginEnd="859dp"
-        android:layout_marginStart="81dp"
-        android:background="@drawable/WhereAmIQuestion"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginBottom="123dp"
+        android:layout_marginEnd="752dp"
+        android:layout_marginStart="108dp"
+        android:background="@drawable/whereamiquestion"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button10" />
 
     <Button
         android:id="@+id/button10"
-        android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="183dp"
-        android:layout_marginStart="40dp"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginBottom="123dp"
+        android:layout_marginStart="46dp"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
