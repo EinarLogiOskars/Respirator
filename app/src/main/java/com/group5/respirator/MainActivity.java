@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-        Intent intent = new Intent(this, SpilScreen.class);
+        Intent intent = new Intent(this, EntertainmentScreen.class);
 
         startActivity(intent);
     }

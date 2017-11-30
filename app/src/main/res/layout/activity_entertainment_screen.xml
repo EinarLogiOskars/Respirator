@@ -4,9 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#292929"
-    tools:context="com.group5.respirator.SpilScreen"
+    android:background="@color/BackgroundGrey"
+    tools:context="com.group5.respirator.EntertainmentScreen"
     tools:layout_editor_absoluteY="25dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="425dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/homeBtn"
+            android:layout_width="75dp"
+            android:layout_height="71dp"
+            android:layout_marginBottom="338dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="1189dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/button8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="home"/>
+
+        <TextView
+            android:id="@+id/homeText"
+            android:layout_width="78dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="308dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="1186dp"
+            android:text="Home"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeBtn" />
+    </android.support.constraint.ConstraintLayout>
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/constraintLayout2"
@@ -14,14 +56,14 @@
         android:layout_height="200dp"
         android:layout_marginTop="424dp"
         android:background="@color/Grå"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton10"
+        app:layout_constraintBottom_toTopOf="@+id/callButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/imageButton11"
+            android:id="@+id/ticTacToeBtn"
             android:layout_width="187dp"
             android:layout_height="126dp"
             android:layout_marginBottom="37dp"
@@ -30,13 +72,14 @@
             android:layout_marginTop="37dp"
             android:background="@drawable/krydsogbolle"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/imageButton13"
+            app:layout_constraintEnd_toStartOf="@+id/memoryBtn"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="openTicTacToe"/>
 
         <Button
-            android:id="@+id/imageButton12"
+            android:id="@+id/quizBtn"
             android:layout_width="187dp"
             android:layout_height="126dp"
             android:layout_marginBottom="37dp"
@@ -45,12 +88,13 @@
             android:layout_marginTop="37dp"
             android:background="@drawable/quiz"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/imageButton13"
+            app:layout_constraintEnd_toStartOf="@+id/memoryBtn"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="openQuiz" />
 
         <Button
-            android:id="@+id/imageButton13"
+            android:id="@+id/memoryBtn"
             android:layout_width="187dp"
             android:layout_height="126dp"
             android:layout_marginBottom="8dp"
@@ -61,10 +105,11 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="openMemoryGame"/>
 
         <Button
-            android:id="@+id/imageButton14"
+            android:id="@+id/chessBtn"
             android:layout_width="187dp"
             android:layout_height="126dp"
             android:layout_marginBottom="37dp"
@@ -74,11 +119,12 @@
             android:background="@drawable/skak"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageButton13"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toEndOf="@+id/memoryBtn"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="openChessGame"/>
 
         <Button
-            android:id="@+id/imageButton15"
+            android:id="@+id/button15"
             android:layout_width="187dp"
             android:layout_height="126dp"
             android:layout_marginBottom="37dp"
@@ -88,13 +134,13 @@
             android:background="@drawable/vendespil"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageButton13"
+            app:layout_constraintStart_toEndOf="@+id/memoryBtn"
             app:layout_constraintTop_toTopOf="parent" />
 
     </android.support.constraint.ConstraintLayout>
 
     <Button
-        android:id="@+id/imageButton10"
+        android:id="@+id/callButton"
         android:layout_width="1280dp"
         android:layout_height="100dp"
         android:background="@drawable/kald"
@@ -103,19 +149,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
 
-
-    <Button
-        android:id="@+id/imageButton16"
-        android:layout_width="100dp"
-        android:layout_height="140dp"
-        android:layout_marginBottom="277dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="1172dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/home"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
