@@ -14,7 +14,7 @@
         android:layout_marginEnd="432dp"
         android:layout_marginStart="433dp"
         android:layout_marginTop="296dp"
-        android:text="Ok måske er skak for sygt et spil..? Hva gør vi?"
+        android:text="Chess game"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="100sp"
