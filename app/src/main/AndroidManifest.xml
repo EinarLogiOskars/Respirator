@@ -20,7 +20,7 @@
         </activity>
         <activity android:name="com.group5.respirator.Communication_akt" />
         <activity android:name="com.group5.respirator.SettingsActivity" />
-        <activity android:name="com.group5.respirator.SpilScreen" />
+        <activity android:name="com.group5.respirator.GameScreen" />
     </application>
 
 </manifest>
