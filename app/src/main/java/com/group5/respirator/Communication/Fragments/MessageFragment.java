@@ -52,7 +52,6 @@ public class MessageFragment extends Fragment implements View.OnClickListener
         EraseButton = (Button) view.findViewById(R.id.EraseButton);
 
         EraseButton.setOnClickListener(this);
-
     }
 
     @Override

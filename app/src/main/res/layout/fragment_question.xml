@@ -11,52 +11,106 @@
     <!-- TODO: Update blank fragment layout -->
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/questionbutton2"
         android:layout_width="187dp"
         android:layout_height="126dp"
-        android:layout_marginBottom="113dp"
-        android:layout_marginEnd="752dp"
-        android:layout_marginTop="239dp"
+        android:layout_marginStart="55dp"
         android:background="@drawable/whatareyoudoing"
-        app:layout_constraintBottom_toTopOf="@+id/button9"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/questionbutton1"
         app:layout_constraintTop_toTopOf="parent" />
 
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/questionbutton1"
         android:layout_width="187dp"
         android:layout_height="126dp"
-        android:layout_marginBottom="113dp"
-        android:layout_marginEnd="108dp"
-        android:layout_marginStart="46dp"
-        android:layout_marginTop="239dp"
+        android:layout_marginStart="55dp"
         android:background="@drawable/whatsisthetime"
-        app:layout_constraintBottom_toTopOf="@+id/button10"
-        app:layout_constraintEnd_toStartOf="@+id/button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/questionbutton3"
         android:layout_width="187dp"
         android:layout_height="126dp"
-        android:layout_marginBottom="123dp"
-        android:layout_marginEnd="752dp"
-        android:layout_marginStart="108dp"
+        android:layout_marginStart="55dp"
         android:background="@drawable/whereamiquestion"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button10" />
+        app:layout_constraintStart_toEndOf="@+id/questionbutton2"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/questionbutton4"
         android:layout_width="187dp"
         android:layout_height="126dp"
-        android:layout_marginBottom="123dp"
-        android:layout_marginStart="46dp"
+        android:layout_marginStart="55dp"
+        android:background="@drawable/hvadfejlerjeg"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="bottom|center"
+        android:paddingBottom="5dp"
+        android:text="Hvad fejler jeg?"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/questionbutton3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/questionbutton5"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/hvadsagdedu"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="bottom|center"
+        android:paddingBottom="5dp"
+        android:text="Hvad sagde du?"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionbutton1" />
+
+    <Button
+        android:id="@+id/questionbutton6"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
         android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/questionbutton5"
+        app:layout_constraintTop_toBottomOf="@+id/questionbutton2" />
+
+    <Button
+        android:id="@+id/questionbutton7"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@+id/questionbutton6"
+        app:layout_constraintTop_toBottomOf="@+id/questionbutton3" />
+
+    <Button
+        android:id="@+id/questionbutton8"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@+id/questionbutton7"
+        app:layout_constraintTop_toBottomOf="@+id/questionbutton4" />
+
+    <Button
+        android:id="@+id/questionbutton9"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionbutton5" />
 
 </android.support.constraint.ConstraintLayout>
