@@ -3,6 +3,7 @@ package com.group5.respirator.Entertainment;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AlertDialog;
@@ -98,11 +99,17 @@ public class EntertainmentScreen extends AppCompatActivity implements View.OnCli
     @Override
     public void onClick(View view) {
         if (view == ticTacToeBtn){
-            //FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            //fragmentTransaction.replace(R.id.fragment_container, ticTacToeFrag);
-            //fragmentTransaction.commit();
-            Intent intent = new Intent(this, HangmanMainActivity.class);
-            startActivity(intent);
+            int resid = R.id.fragment_container;
+            Fragment f = new HangmanMainActivity();
+            Bundle b= new Bundle();
+            b.putInt("resid",resid);
+            f.setArguments(b);
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, f);
+            fragmentTransaction.commit();
+            //Intent intent = new Intent(this, HangmanMainActivity.class);
+            //startActivity(intent);
+
         }
         else if (view == quizBtn){
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
