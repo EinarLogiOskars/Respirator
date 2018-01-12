@@ -1,6 +1,7 @@
 package com.group5.respirator.Entertainment;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -12,6 +13,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.bijannegari.galgespilprojekt.HangmanMainActivity;
 import com.group5.respirator.Entertainment.Fragments.ChessFragment;
 import com.group5.respirator.Entertainment.Fragments.MemoryFragment;
 import com.group5.respirator.Entertainment.Fragments.QuizFragment;
@@ -31,6 +33,8 @@ public class EntertainmentScreen extends AppCompatActivity implements View.OnCli
     private Button ticTacToeBtn;
     private Button quizBtn;
     private Button memoryBtn;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,11 +71,11 @@ public class EntertainmentScreen extends AppCompatActivity implements View.OnCli
 
     }
 
-    public void openTicTacToe(View view) {
+    /*public void openTicTacToe(View view) {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.fragment_container, ticTacToeFrag);
         fragmentTransaction.commit();
-    }
+    }*/
 
 
     public void openMemoryGame(View view) {
@@ -94,9 +98,11 @@ public class EntertainmentScreen extends AppCompatActivity implements View.OnCli
     @Override
     public void onClick(View view) {
         if (view == ticTacToeBtn){
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.fragment_container, ticTacToeFrag);
-            fragmentTransaction.commit();
+            //FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            //fragmentTransaction.replace(R.id.fragment_container, ticTacToeFrag);
+            //fragmentTransaction.commit();
+            Intent intent = new Intent(this, HangmanMainActivity.class);
+            startActivity(intent);
         }
         else if (view == quizBtn){
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
