@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.bijannegari.galgespilprojekt.HangmanMainActivity;
@@ -35,6 +36,8 @@ public class EntertainmentScreen extends AppCompatActivity implements View.OnCli
     private Button quizBtn;
     private Button memoryBtn;
 
+    private ImageView homeBtn;
+
 
 
     @Override
@@ -57,43 +60,13 @@ public class EntertainmentScreen extends AppCompatActivity implements View.OnCli
         ticTacToeBtn = (Button) findViewById(R.id.ticTacToeBtn);
         quizBtn = (Button) findViewById(R.id.quizBtn);
         memoryBtn = (Button) findViewById(R.id.memoryBtn);
+        homeBtn = (ImageView) findViewById(R.id.homeBtn);
 
         ticTacToeBtn.setOnClickListener(this);
         quizBtn.setOnClickListener(this);
         memoryBtn.setOnClickListener(this);
         callButton.setOnClickListener(this);
-    }
-
-    public void openQuiz(View view) {
-
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_container, quizFrag);
-        fragmentTransaction.commit();
-
-    }
-
-    /*public void openTicTacToe(View view) {
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_container, ticTacToeFrag);
-        fragmentTransaction.commit();
-    }*/
-
-
-    public void openMemoryGame(View view) {
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_container, memoryFrag);
-        fragmentTransaction.commit();
-    }
-
-    public void openChessGame(View view) {
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_container, chessFrag);
-        fragmentTransaction.commit();
-    }
-
-    public void home(View view) {
-
-        finish();
+        homeBtn.setOnClickListener(this);
     }
 
     @Override
@@ -152,6 +125,9 @@ public class EntertainmentScreen extends AppCompatActivity implements View.OnCli
 
             AlertDialog alertDialog = alertDialogBuilder.create();
             alertDialog.show();
+        }
+        else if (view == homeBtn){
+            finish();
         }
     }
 }

@@ -9,18 +9,20 @@
         android:id="@+id/listeelem_billede"
         android:layout_width="60dip"
         android:layout_height="40dip"
-        android:layout_margin="5dip"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="447dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/hangman"/>
+        android:src="@drawable/hangman" />
 
     <TextView
         android:id="@+id/listeelem_overskrift"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/listeelem_billede"
         android:layout_alignTop="@+id/listeelem_billede"
-        android:layout_toEndOf="@+id/listeelem_billede"
-        android:layout_toRightOf="@+id/listeelem_billede"
         android:text="overskrift"
+        android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold" />
