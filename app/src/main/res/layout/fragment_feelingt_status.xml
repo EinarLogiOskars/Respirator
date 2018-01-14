@@ -8,16 +8,209 @@
     tools:context="com.group5.respirator.Communication.Fragments.FeelingtStatusFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:text="@string/hello_blank_fragment"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+
+
+    <Button
+        android:id="@+id/questionbutton1"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:background="@drawable/affraid"
+        android:gravity="bottom|center"
+        android:paddingBottom="15dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:text="Jeg er bange"
+        android:textSize="17sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        />
+
+    <Button
+        android:id="@+id/questionbutton2"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="52dp"
+        android:background="@drawable/worried"
+        android:gravity="bottom|center"
+        android:paddingBottom="15dp"
+        android:text="Jeg er bekymret"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/questionbutton1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/questionbutton3"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:background="@drawable/frustrated"
+        android:gravity="bottom|center"
+        android:paddingBottom="10dp"
+        android:text="Jeg er frustreret"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/questionbutton2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/questionbutton4"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="56dp"
+        android:background="@drawable/happy"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="bottom|center"
+        android:paddingBottom="15dp"
+        android:text="Jeg er glad"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/questionbutton3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/questionbutton5"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/hvadsagdedu"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="bottom|center"
+        android:paddingBottom="10dp"
+        android:text="Hvad sagde du?"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionbutton1" />
+
+    <Button
+        android:id="@+id/questionbutton6"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/cold"
+        android:gravity="bottom|center"
+        android:paddingBottom="15dp"
+        android:text="Jeg er kold"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/questionbutton5"
+        app:layout_constraintTop_toBottomOf="@+id/questionbutton2" />
+
+    <Button
+        android:id="@+id/questionbutton7"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/fine"
+        android:gravity="bottom|center"
+        android:paddingBottom="9dp"
+        android:text="Jeg er tilpas"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/questionbutton6"
+        app:layout_constraintTop_toBottomOf="@+id/questionbutton3" />
+
+    <Button
+        android:id="@+id/questionbutton8"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/tired"
+        android:gravity="bottom|center"
+        android:paddingBottom="11dp"
+        android:text="Jeg er træt"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/questionbutton7"
+        app:layout_constraintTop_toBottomOf="@+id/questionbutton4" />
+
+    <Button
+        android:id="@+id/questionbutton9"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/whendrink"
+        android:gravity="bottom|center"
+        android:paddingBottom="11dp"
+        android:text="Jeg er tørstig"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionbutton5" />
+
+    <Button
+        android:id="@+id/questionbutton10"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/air"
+        android:gravity="bottom|center"
+        android:paddingBottom="15dp"
+        android:text="Jeg kan ikke få luft"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/questionbutton12"
+        app:layout_constraintTop_toBottomOf="@+id/questionbutton8" />
+
+    <Button
+        android:id="@+id/questionbutton11"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/hot"
+        android:gravity="bottom|center"
+        android:paddingBottom="15dp"
+        android:text="Jeg er varm"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/questionbutton9"
+        app:layout_constraintTop_toBottomOf="@+id/questionbutton6" />
+
+    <Button
+        android:id="@+id/questionbutton12"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/sore"
+        android:gravity="bottom|center"
+        android:paddingBottom="15dp"
+        android:text="Jeg er øm"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/questionbutton11"
+        app:layout_constraintTop_toBottomOf="@+id/questionbutton7" />
 
 </android.support.constraint.ConstraintLayout>

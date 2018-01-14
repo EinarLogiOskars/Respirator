@@ -11,10 +11,10 @@
 
     <EditText
         android:id="@+id/PatientMessage"
-        android:layout_width="1112dp"
+        android:layout_width="999dp"
         android:layout_height="262dp"
         android:layout_marginBottom="254dp"
-        android:layout_marginEnd="132dp"
+        android:layout_marginEnd="245dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="136dp"
         android:background="@android:color/background_light"

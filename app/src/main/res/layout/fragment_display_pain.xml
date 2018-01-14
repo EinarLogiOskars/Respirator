@@ -1,15 +1,41 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout5"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/BackgroundGrey"
-    tools:context="com.group5.respirator.Communication.Fragments.DisplayPainFragment">
+    tools:context="com.group5.respirator.Communication.Fragments.DisplayPainFragment"
+    tools:layout_editor_absoluteY="25dp">
 
     <!-- TODO: Update blank fragment layout -->
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <RelativeLayout
+        android:id="@+id/rect2"
+        android:layout_width="234dp"
+        android:layout_height="385dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="212dp"
+        android:background="@drawable/kropbag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-</FrameLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rect1"
+        android:layout_width="250dp"
+        android:layout_height="385dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="564dp"
+        android:background="@drawable/bodyfront"
+        app:layout_constraintEnd_toStartOf="@+id/rect2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

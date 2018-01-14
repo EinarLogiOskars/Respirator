@@ -1,14 +1,215 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/BackgroundGrey"
     tools:context="com.group5.respirator.Communication.Fragments.ActionsFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+
+    <Button
+        android:id="@+id/questionbutton1"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:background="@drawable/visit"
+        android:gravity="bottom|center"
+        android:paddingBottom="8dp"
+        android:text="Jeg vil gerne have besøg"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/questionbutton2"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:background="@drawable/air"
+        android:gravity="bottom|center"
+        android:paddingBottom="11dp"
+        android:text="Jeg vil gerne have luft"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/questionbutton1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/questionbutton3"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:background="@drawable/silence"
+        android:gravity="bottom|center"
+        android:paddingBottom="11dp"
+        android:text="Jeg vil gerne have ro"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/questionbutton2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/questionbutton4"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:background="@drawable/painkiller"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="bottom|center"
+        android:paddingBottom="0dp"
+        android:text="Jeg vil gerne have smertestillende"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/questionbutton3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/questionbutton5"
+        android:layout_width="187dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/lightson"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="bottom|center"
+        android:paddingBottom="0dp"
+        android:text="Jeg vil gerne have tændt lys"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionbutton1" />
+
+    <Button
+        android:id="@+id/questionbutton6"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bedtime"
+        android:gravity="bottom|center"
+        android:paddingBottom="5dp"
+        android:text="Jeg vil gerne ligge i sengen"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/questionbutton5"
+        app:layout_constraintTop_toBottomOf="@+id/questionbutton2" />
+
+    <Button
+        android:id="@+id/questionbutton7"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/toiletvisit"
+        android:gravity="bottom|center"
+        android:paddingBottom="0dp"
+        android:text="Jeg vil gerne på toilettet"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/questionbutton6"
+        app:layout_constraintTop_toBottomOf="@+id/questionbutton3" />
+
+    <Button
+        android:id="@+id/questionbutton8"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/walk"
+        android:gravity="bottom|center"
+        android:paddingBottom="12dp"
+        android:text="Jeg vil gerne på tur"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/questionbutton7"
+        app:layout_constraintTop_toBottomOf="@+id/questionbutton4" />
+
+    <Button
+        android:id="@+id/questionbutton9"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/tv"
+        android:gravity="bottom|center"
+        android:paddingBottom="15dp"
+        android:text="Jeg vil gerne se tv"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionbutton5" />
+
+    <Button
+        android:id="@+id/questionbutton10"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/turn"
+        android:gravity="bottom|center"
+        android:paddingBottom="11dp"
+        android:text="Jeg vil gerne vendes"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/questionbutton12"
+        app:layout_constraintTop_toBottomOf="@+id/questionbutton8" />
+
+    <Button
+        android:id="@+id/questionbutton11"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/chair"
+        android:gravity="bottom|center"
+        android:paddingBottom="5dp"
+        android:text="Jeg vil gerne sidde i stolen"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/questionbutton9"
+        app:layout_constraintTop_toBottomOf="@+id/questionbutton6" />
+
+    <Button
+        android:id="@+id/questionbutton12"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/suction"
+        android:gravity="bottom|center"
+        android:paddingBottom="15dp"
+        android:text="Jeg vil gerne suges"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/questionbutton11"
+        app:layout_constraintTop_toBottomOf="@+id/questionbutton7" />
+
+</android.support.constraint.ConstraintLayout>
