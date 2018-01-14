@@ -79,7 +79,9 @@ public class DisplayPainFragment extends Fragment
         public Drawboard(Context a)
         {
             super(a);
+            paintType.setTextSize(1);
         }
+
         @Override
         public boolean onTouchEvent(MotionEvent b)
         {
@@ -94,7 +96,6 @@ public class DisplayPainFragment extends Fragment
         public void onDraw(Canvas c) {
             for (Point p : touchPoint)
             {
-//                c.drawCircle(p.x, p.y, 3, paintType);
                 c.drawBitmap(bitmapResized, p.x, p.y, paintType);
             }
         }

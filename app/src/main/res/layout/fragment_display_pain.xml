@@ -12,25 +12,27 @@
 
     <RelativeLayout
         android:id="@+id/rect2"
-        android:layout_width="234dp"
+        android:layout_width="225dp"
         android:layout_height="385dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="212dp"
+        android:layout_marginEnd="280dp"
+        android:layout_marginStart="25dp"
         android:background="@drawable/kropbag"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rect1"
         app:layout_constraintTop_toTopOf="parent">
 
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/rect1"
-        android:layout_width="250dp"
+        android:layout_width="225dp"
         android:layout_height="385dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="564dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="570dp"
         android:background="@drawable/bodyfront"
         app:layout_constraintEnd_toStartOf="@+id/rect2"
         app:layout_constraintStart_toStartOf="parent"
