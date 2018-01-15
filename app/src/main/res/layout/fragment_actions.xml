@@ -101,11 +101,11 @@
         android:layout_marginTop="15dp"
         android:background="@drawable/bedtime"
         android:gravity="bottom|center"
-        android:paddingBottom="5dp"
+        android:paddingBottom="15dp"
         android:text="Jeg vil gerne ligge i sengen"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
-        android:textSize="15sp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/questionbutton5"
         app:layout_constraintTop_toBottomOf="@+id/questionbutton2" />
