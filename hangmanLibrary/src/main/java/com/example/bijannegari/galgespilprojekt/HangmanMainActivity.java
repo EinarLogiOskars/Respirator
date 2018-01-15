@@ -53,17 +53,17 @@ public class HangmanMainActivity extends Fragment implements View.OnClickListene
     @Override
     public void onClick(View view) {
         if (view == button1){
-            Fragment choose = new ChooseWordManually();
-            choose.setArguments(b);
-            getFragmentManager().beginTransaction().replace(resid, choose).commit();
+            Fragment frag = new ChooseWordManually();
+            frag.setArguments(b);
+            getFragmentManager().beginTransaction().replace(resid, frag).commit();
         }
         /*else if(view == button2){
             finish();
         }*/
         else if(view == highscoreButton){
-            Fragment choose = new Highscore();
-            choose.setArguments(b);
-            getFragmentManager().beginTransaction().replace(resid, choose).commit();
+            Fragment frag = new Highscore();
+            frag.setArguments(b);
+            getFragmentManager().beginTransaction().replace(resid, frag).commit();
         }
     }
 

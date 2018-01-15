@@ -15,12 +15,14 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.anup.tictactoe.Board;
 import com.example.bijannegari.galgespilprojekt.HangmanMainActivity;
 import com.group5.respirator.Entertainment.Fragments.ChessFragment;
 import com.group5.respirator.Entertainment.Fragments.MemoryFragment;
 import com.group5.respirator.Entertainment.Fragments.QuizFragment;
 import com.group5.respirator.Entertainment.Fragments.TicTacToeFragment;
 import com.group5.respirator.R;
+
 
 public class EntertainmentScreen extends AppCompatActivity implements View.OnClickListener {
 
@@ -85,8 +87,13 @@ public class EntertainmentScreen extends AppCompatActivity implements View.OnCli
 
         }
         else if (view == quizBtn){
+            int resid = R.id.fragment_container;
+            Fragment f = new Board();
+            Bundle b= new Bundle();
+            b.putInt("resid",resid);
+            f.setArguments(b);
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.fragment_container, quizFrag);
+            fragmentTransaction.replace(R.id.fragment_container, f);
             fragmentTransaction.commit();
         }
         else if (view == memoryBtn){
