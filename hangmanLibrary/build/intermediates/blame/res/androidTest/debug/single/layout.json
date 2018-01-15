@@ -12,20 +12,20 @@
         "source": "C:\\AndroidStudioProjects\\Respirator\\hangmanLibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\activity_choose_word_manually.xml"
     },
     {
-        "merged": "C:\\AndroidStudioProjects\\Respirator\\hangmanLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
-        "source": "C:\\Users\\Einar Logi Óskarsson\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16b293054cebd6a6ff82440144e35db9\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
-    },
-    {
         "merged": "C:\\AndroidStudioProjects\\Respirator\\hangmanLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_mode_close_item_material.xml",
         "source": "C:\\Users\\Einar Logi Óskarsson\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16b293054cebd6a6ff82440144e35db9\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "C:\\AndroidStudioProjects\\Respirator\\hangmanLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
-        "source": "C:\\Users\\Einar Logi Óskarsson\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16b293054cebd6a6ff82440144e35db9\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+        "merged": "C:\\AndroidStudioProjects\\Respirator\\hangmanLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\Einar Logi Óskarsson\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16b293054cebd6a6ff82440144e35db9\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
         "merged": "C:\\AndroidStudioProjects\\Respirator\\hangmanLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_big_media.xml",
         "source": "C:\\Users\\Einar Logi Óskarsson\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\aa5e0fcb4f84157d85de11a207fa098f\\res\\layout\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "C:\\AndroidStudioProjects\\Respirator\\hangmanLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "C:\\Users\\Einar Logi Óskarsson\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16b293054cebd6a6ff82440144e35db9\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
     {
         "merged": "C:\\AndroidStudioProjects\\Respirator\\hangmanLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_screen_toolbar.xml",

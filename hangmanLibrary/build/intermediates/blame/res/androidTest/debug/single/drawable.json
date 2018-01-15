@@ -92,12 +92,12 @@
         "source": "C:\\AndroidStudioProjects\\Respirator\\hangmanLibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\hangman.png"
     },
     {
-        "merged": "C:\\AndroidStudioProjects\\Respirator\\hangmanLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_text_cursor_material.xml",
-        "source": "C:\\Users\\Einar Logi Óskarsson\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16b293054cebd6a6ff82440144e35db9\\res\\drawable\\abc_text_cursor_material.xml"
-    },
-    {
         "merged": "C:\\AndroidStudioProjects\\Respirator\\hangmanLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_vector_test.xml",
         "source": "C:\\Users\\Einar Logi Óskarsson\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16b293054cebd6a6ff82440144e35db9\\res\\drawable\\abc_vector_test.xml"
+    },
+    {
+        "merged": "C:\\AndroidStudioProjects\\Respirator\\hangmanLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\Einar Logi Óskarsson\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16b293054cebd6a6ff82440144e35db9\\res\\drawable\\abc_text_cursor_material.xml"
     },
     {
         "merged": "C:\\AndroidStudioProjects\\Respirator\\hangmanLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\notification_tile_bg.xml",
