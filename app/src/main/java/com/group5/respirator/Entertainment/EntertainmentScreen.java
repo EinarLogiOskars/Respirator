@@ -23,6 +23,8 @@ import com.group5.respirator.Entertainment.Fragments.QuizFragment;
 import com.group5.respirator.Entertainment.Fragments.TicTacToeFragment;
 import com.group5.respirator.R;
 
+import org.tbadg.memory.MemoryActivity;
+
 
 public class EntertainmentScreen extends AppCompatActivity implements View.OnClickListener {
 
@@ -97,9 +99,11 @@ public class EntertainmentScreen extends AppCompatActivity implements View.OnCli
             fragmentTransaction.commit();
         }
         else if (view == memoryBtn){
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            Intent Intent = new Intent(this, MemoryActivity.class);
+            startActivity(Intent);
+            /*FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, memoryFrag);
-            fragmentTransaction.commit();
+            fragmentTransaction.commit();*/
         }
         else if (view == callButton){
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);

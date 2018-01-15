@@ -7,11 +7,10 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
+            <option value="$PROJECT_DIR$/.." />
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/Memory" />
-            <option value="$PROJECT_DIR$/Tic-Tac-Toe---Android" />
-            <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/hangmanLibrary" />
+            <option value="$PROJECT_DIR$/../app" />
+            <option value="$PROJECT_DIR$/../hangmanLibrary" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
