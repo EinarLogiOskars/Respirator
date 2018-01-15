@@ -11,7 +11,7 @@
         android:id="@+id/callBtn"
         android:layout_width="1281dp"
         android:layout_height="100dp"
-        android:background="@drawable/button1"
+        android:background="@drawable/kald"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -34,18 +34,19 @@
 
     <Button
         android:id="@+id/comBtn"
+        style="@style/AppTheme.RoundedCornerMaterialButton"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_marginBottom="137dp"
         android:layout_marginEnd="830dp"
         android:layout_marginStart="200dp"
         android:layout_marginTop="190dp"
-        android:background="@drawable/com_btn"
+        android:background="@drawable/kommunikation"
+        android:onClick="communication"
         app:layout_constraintBottom_toTopOf="@+id/callBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="communication"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/entBtn"
@@ -56,10 +57,25 @@
         android:layout_marginStart="830dp"
         android:layout_marginTop="190dp"
         android:background="@drawable/ent_btn"
+        android:onClick="entertainment"
         app:layout_constraintBottom_toTopOf="@+id/callBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="entertainment"/>
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timeView"
+        android:layout_width="494dp"
+        android:layout_height="121dp"
+        android:layout_marginEnd="284dp"
+        android:layout_marginStart="386dp"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/settingBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

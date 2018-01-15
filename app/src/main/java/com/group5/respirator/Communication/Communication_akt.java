@@ -1,9 +1,15 @@
 package com.group5.respirator.Communication;
 
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.Point;
 import android.support.v4.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -16,6 +22,8 @@ import com.group5.respirator.Communication.Fragments.MessageFragment;
 import com.group5.respirator.Communication.Fragments.QuestionFragment;
 import com.group5.respirator.R;
 
+import java.util.ArrayList;
+
 
 public class Communication_akt extends AppCompatActivity
 {
@@ -27,6 +35,7 @@ public class Communication_akt extends AppCompatActivity
     QuestionFragment QuestionFrag;
     FragmentManager fragmentManager;
     TextView textView1;
+
 
 
 
@@ -50,6 +59,7 @@ public class Communication_akt extends AppCompatActivity
         textView1 = (TextView) findViewById(R.id.title1);
 
     }
+
 
     public void DisplayActionFrag(View view)
     {
