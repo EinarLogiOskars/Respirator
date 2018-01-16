@@ -115,7 +115,7 @@ public class EntertainmentScreen extends AppCompatActivity implements View.OnCli
             alertDialogBuilder.setTitle("Konfirmer kald!!!");
 
             // Icon Of Alert Dialog. Har bare valgt et tilfældigt billed, det ændrer vi
-            alertDialogBuilder.setIcon(R.drawable.thumbs);
+//            alertDialogBuilder.setIcon(R.drawable.thumbs);
 
             // Setting Alert Dialog Message
             alertDialogBuilder.setMessage("Are you sure, You want to call?");

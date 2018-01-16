@@ -95,7 +95,7 @@
             android:layout_marginStart="60dp"
             android:layout_marginTop="37dp"
 
-            android:background="@drawable/nulstil"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/button4"
             app:layout_constraintStart_toStartOf="parent"
@@ -109,7 +109,7 @@
             android:layout_marginEnd="60dp"
             android:layout_marginStart="300dp"
             android:layout_marginTop="36dp"
-            android:background="@drawable/touch"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/button4"
             app:layout_constraintStart_toStartOf="parent"
@@ -124,7 +124,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="37dp"
-            android:background="@drawable/sound"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -139,7 +139,7 @@
             android:layout_marginEnd="300dp"
             android:layout_marginStart="60dp"
             android:layout_marginTop="37dp"
-            android:background="@drawable/text_size"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/button4"
@@ -154,7 +154,7 @@
             android:layout_marginEnd="60dp"
             android:layout_marginStart="300dp"
             android:layout_marginTop="37dp"
-            android:background="@drawable/sprog"
+
             android:onClick="language"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -168,7 +168,7 @@
         android:id="@+id/callBtn"
         android:layout_width="1281dp"
         android:layout_height="100dp"
-        android:background="@drawable/kald"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
