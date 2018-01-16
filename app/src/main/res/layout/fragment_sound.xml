@@ -14,6 +14,7 @@
         android:layout_marginStart="120dp"
         android:layout_marginTop="30dp"
 
+        android:background="@drawable/sound2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -26,6 +27,7 @@
         android:layout_marginStart="490dp"
         android:layout_marginTop="30dp"
 
+        android:background="@drawable/sound1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -38,6 +40,7 @@
         android:layout_marginStart="860dp"
         android:layout_marginTop="30dp"
 
+        android:background="@drawable/sound3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -48,11 +51,12 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="250dp"
         android:layout_marginStart="175dp"
-        android:layout_marginTop="150dp"
-        android:text="Standard"
+        android:layout_marginTop="148dp"
+        android:text="Lower"
         android:textColor="@android:color/white"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -60,9 +64,9 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="600dp"
+        android:layout_marginStart="560dp"
         android:layout_marginTop="148dp"
-        android:text="Mellem"
+        android:text="Mute/Unmute"
         android:textColor="@android:color/white"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,7 +79,7 @@
         android:layout_marginEnd="234dp"
         android:layout_marginStart="302dp"
         android:layout_marginTop="150dp"
-        android:text="Max"
+        android:text="Raise"
         android:textColor="@android:color/white"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"

@@ -96,6 +96,7 @@
             android:layout_marginTop="37dp"
 
 
+            android:background="@drawable/nulstil"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/button4"
             app:layout_constraintStart_toStartOf="parent"
@@ -110,11 +111,12 @@
             android:layout_marginStart="300dp"
             android:layout_marginTop="36dp"
 
+            android:background="@drawable/touch"
+            android:onClick="touchSettings"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/button4"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:onClick="touchSettings" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/soundBtn"
@@ -125,11 +127,12 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="37dp"
 
+            android:background="@drawable/sound"
+            android:onClick="sound"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:onClick="sound"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/textSizeBtn"
@@ -140,11 +143,12 @@
             android:layout_marginStart="60dp"
             android:layout_marginTop="37dp"
 
+            android:background="@drawable/text_size"
+            android:onClick="textSize"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/button4"
-            app:layout_constraintTop_toTopOf="parent"
-            android:onClick="textSize"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/languageBtn"
@@ -155,6 +159,7 @@
             android:layout_marginStart="300dp"
             android:layout_marginTop="37dp"
 
+            android:background="@drawable/sprog"
             android:onClick="language"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
