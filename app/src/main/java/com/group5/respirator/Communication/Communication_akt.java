@@ -1,19 +1,13 @@
 package com.group5.respirator.Communication;
 
-import android.app.Fragment;
-import android.content.Context;
-import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.LightingColorFilter;
-import android.graphics.Paint;
-import android.graphics.Point;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Gravity;
-import android.view.MotionEvent;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -30,7 +24,11 @@ import com.group5.respirator.Communication.Fragments.QuestionFragment;
 import com.group5.respirator.R;
 
 import java.util.ArrayList;
-import java.util.List;
+
+import static com.group5.respirator.Communication.Fragments.DisplayPainFragment.PainButtonsCollection;
+import static com.group5.respirator.Communication.Fragments.ActionsFragment.ActionsButtonsCollection;
+import static com.group5.respirator.Communication.Fragments.QuestionFragment.QuestionButtonsCollection;
+import static com.group5.respirator.Communication.Fragments.FeelingtStatusFragment.FeelingButtonsCollection;
 
 public class Communication_akt extends AppCompatActivity implements View.OnClickListener
 {
@@ -47,8 +45,10 @@ public class Communication_akt extends AppCompatActivity implements View.OnClick
     private Button QuestionButton;
     private Button ActionsButton;
     private Button HomeButton;
+    private FragmentTransaction fragmentTransaction;
 
     private ArrayList<Button> ButtonsCollection = new ArrayList<Button>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -81,17 +81,19 @@ public class Communication_akt extends AppCompatActivity implements View.OnClick
         ButtonsCollection.add(QuestionButton);
         ButtonsCollection.add(ActionsButton);
 
+        QuestionFrag.onDestroyView();
         Messagebutton.setOnClickListener(this);
         PainButton.setOnClickListener(this);
         FeelingButton.setOnClickListener(this);
         QuestionButton.setOnClickListener(this);
         ActionsButton.setOnClickListener(this);
         HomeButton.setOnClickListener(this);
+
     }
 
     public void DisplayActionFrag()
     {
-        ButtonCleaner(ActionsButton);
+        ButtonReleaser(ActionsButton);
 
         if (ActionsButton.isSelected() == false)
         {
@@ -108,13 +110,13 @@ public class Communication_akt extends AppCompatActivity implements View.OnClick
             textView1.setVisibility(View.GONE);
         }
 
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.fragment_container, ActionFrag);
         fragmentTransaction.commit();
     }
     public void DisplayPainFrag()
     {
-        ButtonCleaner(PainButton);
+        ButtonReleaser(PainButton);
 
         if (PainButton.isSelected() == false)
         {
@@ -131,13 +133,14 @@ public class Communication_akt extends AppCompatActivity implements View.OnClick
             textView1.setVisibility(View.GONE);
         }
 
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+        fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.fragment_container, DisplayPainFrag);
         fragmentTransaction.commit();
     }
     public void DisplayFeelingFrag()
     {
-        ButtonCleaner(FeelingButton);
+        ButtonReleaser(FeelingButton);
 
         if (FeelingButton.isSelected() == false)
         {
@@ -154,13 +157,13 @@ public class Communication_akt extends AppCompatActivity implements View.OnClick
             textView1.setVisibility(View.GONE);
         }
 
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.fragment_container, FeelingFrag);
         fragmentTransaction.commit();
     }
     public void DisplayMessageFrag()
     {
-        ButtonCleaner(Messagebutton);
+        ButtonReleaser(Messagebutton);
 
         if (Messagebutton.isSelected() == false)
         {
@@ -177,15 +180,15 @@ public class Communication_akt extends AppCompatActivity implements View.OnClick
             textView1.setVisibility(View.GONE);
         }
 
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+        fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.fragment_container, MessageFrag);
         fragmentTransaction.commit();
     }
 
     public void DisplayQuestionFrag()
     {
-        ButtonCleaner(QuestionButton);
-
+        ButtonReleaser(QuestionButton);
 
         if (QuestionButton.isSelected() == false)
         {
@@ -202,7 +205,8 @@ public class Communication_akt extends AppCompatActivity implements View.OnClick
             textView1.setVisibility(View.GONE);
         }
 
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+        fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.fragment_container, QuestionFrag);
         fragmentTransaction.commit();
     }
@@ -214,6 +218,8 @@ public class Communication_akt extends AppCompatActivity implements View.OnClick
             ButtonsCollection.get(i).getBackground().clearColorFilter();
             ButtonsCollection.get(i).setSelected(false);
         }
+
+
         finish();
     }
 
@@ -244,7 +250,7 @@ public class Communication_akt extends AppCompatActivity implements View.OnClick
         }
     }
 
-    public void ButtonCleaner(Button b)
+    public void ButtonReleaser(Button b)
     {
         for (int i = 0; i < ButtonsCollection.size(); i++)
         {
@@ -254,7 +260,24 @@ public class Communication_akt extends AppCompatActivity implements View.OnClick
                 ButtonsCollection.get(i).setSelected(false);
             }
         }
+        for (int t = 0; t < ActionsButtonsCollection.size(); t++)
+        {
+            ActionsButtonsCollection.get(t).getBackground().clearColorFilter();
+        }
+        for (int t = 0; t < PainButtonsCollection.size(); t++)
+        {
+            PainButtonsCollection.get(t).getBackground().clearColorFilter();
+        }
+        for (int t = 0; t < QuestionButtonsCollection.size(); t++)
+        {
+            QuestionButtonsCollection.get(t).getBackground().clearColorFilter();
+        }
+        for (int t = 0; t < FeelingButtonsCollection.size(); t++)
+        {
+            FeelingButtonsCollection.get(t).getBackground().clearColorFilter();
+        }
     }
+
     public void QuickTapButton(View v)
     {
         AlphaAnimation alphaDown = new AlphaAnimation(1.0f, 0.3f);

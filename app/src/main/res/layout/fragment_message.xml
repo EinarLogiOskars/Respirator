@@ -5,42 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/BackgroundGrey"
-    tools:context="com.group5.respirator.Communication.Fragments.MessageFragment">
+    tools:context="com.group5.respirator.Communication.Fragments.MessageFragment"
+    tools:layout_editor_absoluteY="25dp">
 
     <!-- TODO: Update blank fragment layout -->
 
     <EditText
         android:id="@+id/PatientMessage"
-        android:layout_width="999dp"
-        android:layout_height="262dp"
-        android:layout_marginBottom="254dp"
-        android:layout_marginEnd="245dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="136dp"
-        android:background="@android:color/background_light"
+        android:layout_width="432dp"
+        android:layout_height="214dp"
+        android:layout_marginStart="55dp"
+        android:background="@color/DisplayGrey"
         android:ems="10"
         android:gravity="top|left"
         android:inputType="textPersonName"
         android:singleLine="false"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.506" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/EraseButton"
         android:layout_width="173dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="91dp"
-        android:layout_marginEnd="601dp"
-        android:layout_marginStart="506dp"
-        android:layout_marginTop="152dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="16dp"
         android:text="Slet alt"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PatientMessage"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/PatientMessage" />
+
+    <ListView
+        android:layout_width="432dp"
+        android:layout_height="214dp"
+        android:layout_marginStart="89dp"
+        android:background="@android:color/background_light"
+        app:layout_constraintStart_toEndOf="@+id/PatientMessage"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>

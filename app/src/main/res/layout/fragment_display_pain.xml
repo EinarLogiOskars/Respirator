@@ -17,6 +17,12 @@
         android:layout_marginStart="55dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/strongpain"
+        android:text="Kraftig smerte"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:paddingTop="70dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/questionbutton5" />
 
@@ -26,6 +32,12 @@
         android:layout_height="126dp"
         android:layout_marginStart="55dp"
         android:background="@drawable/mildpain"
+        android:paddingTop="70dp"
+        android:text="Mild smerte"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,32 +48,29 @@
         android:layout_marginStart="55dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/extremeain"
+        android:paddingTop="70dp"
+        android:text="Intens smerte"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/questionbutton6"
         app:layout_constraintTop_toBottomOf="@+id/questionbutton1" />
 
     <Button
         android:id="@+id/questionbutton3"
-        android:layout_width="187dp"
+        android:layout_width="426dp"
         android:layout_height="126dp"
         android:layout_marginStart="55dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/clearbutton"
+        android:paddingTop="65dp"
         android:text="Fjern Markering"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
         android:textStyle="bold"
-        android:paddingTop="65dp"
-        app:layout_constraintStart_toEndOf="@+id/questionbutton2"
-        app:layout_constraintTop_toBottomOf="@+id/questionbutton4" />
-
-    <Button
-        android:id="@+id/questionbutton2"
-        android:layout_width="187dp"
-        android:layout_height="126dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="15dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/questionbutton6" />
+        app:layout_constraintTop_toBottomOf="@+id/questionbutton4" />
 
     <Button
         android:id="@+id/questionbutton1"
@@ -69,6 +78,12 @@
         android:layout_height="126dp"
         android:layout_marginStart="55dp"
         android:background="@drawable/moderatepain"
+        android:text="Moderat smerte"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:paddingTop="71dp"
         app:layout_constraintStart_toEndOf="@+id/questionbutton5"
         app:layout_constraintTop_toTopOf="parent" />
 

@@ -31,7 +31,6 @@ import java.util.ArrayList;
 public class DisplayPainFragment extends Fragment implements View.OnClickListener
 {
     private Button questionbutton1;
-    private Button questionbutton2;
     private Button EraseButton;
     private Button questionbutton4;
     private Button questionbutton5;
@@ -39,7 +38,7 @@ public class DisplayPainFragment extends Fragment implements View.OnClickListene
     private RelativeLayout relativeLayout1;
     private RelativeLayout relativeLayout2;
 
-    private ArrayList<Button> ButtonsCollection = new ArrayList<Button>();
+    public static ArrayList<Button> PainButtonsCollection = new ArrayList<Button>();
 
     public DisplayPainFragment()
     {
@@ -56,8 +55,6 @@ public class DisplayPainFragment extends Fragment implements View.OnClickListene
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-
-
     }
 
     @Override
@@ -76,20 +73,17 @@ public class DisplayPainFragment extends Fragment implements View.OnClickListene
         relativeLayout2 = rootView.findViewById(R.id.rect2);
 
         questionbutton1 = rootView.findViewById(R.id.questionbutton1);
-        questionbutton2 = rootView.findViewById(R.id.questionbutton2);
         EraseButton = rootView.findViewById(R.id.questionbutton3);
         questionbutton4 = rootView.findViewById(R.id.questionbutton4);
         questionbutton5 = rootView.findViewById(R.id.questionbutton5);
         questionbutton6 = rootView.findViewById(R.id.questionbutton6);
 
-        ButtonsCollection.add(questionbutton1);
-        ButtonsCollection.add(questionbutton2);
-        ButtonsCollection.add(questionbutton4);
-        ButtonsCollection.add(questionbutton5);
-        ButtonsCollection.add(questionbutton6);
+        PainButtonsCollection.add(questionbutton1);
+        PainButtonsCollection.add(questionbutton4);
+        PainButtonsCollection.add(questionbutton5);
+        PainButtonsCollection.add(questionbutton6);
 
         questionbutton1.setOnClickListener(this);
-        questionbutton2.setOnClickListener(this);
         EraseButton.setOnClickListener(this);
         questionbutton4.setOnClickListener(this);
         questionbutton5.setOnClickListener(this);
@@ -104,7 +98,7 @@ public class DisplayPainFragment extends Fragment implements View.OnClickListene
     @Override
     public void onClick(View v)
     {
-        ButtonCleaner(v.getId());
+        ButtonReleaser(v.getId());
 
         if (v.isSelected() == false)
         {
@@ -140,14 +134,14 @@ public class DisplayPainFragment extends Fragment implements View.OnClickListene
         alphaUp.setFillAfter(true);
         v.startAnimation(alphaUp);
     }
-    public void ButtonCleaner(int b)
+    public void ButtonReleaser(int b)
     {
-        for (int i = 0; i < ButtonsCollection.size(); i++)
+        for (int i = 0; i < PainButtonsCollection.size(); i++)
         {
-            if(b != ButtonsCollection.get(i).getId())
+            if(b != PainButtonsCollection.get(i).getId())
             {
-                ButtonsCollection.get(i).getBackground().clearColorFilter();
-                ButtonsCollection.get(i).setSelected(false);
+                PainButtonsCollection.get(i).getBackground().clearColorFilter();
+                PainButtonsCollection.get(i).setSelected(false);
             }
         }
     }

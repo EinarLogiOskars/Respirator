@@ -12,6 +12,8 @@ import android.widget.Button;
 
 import com.group5.respirator.R;
 
+import java.util.ArrayList;
+
 
 public class ActionsFragment extends Fragment implements View.OnClickListener
 {
@@ -27,6 +29,8 @@ public class ActionsFragment extends Fragment implements View.OnClickListener
     private Button questionbutton10;
     private Button questionbutton11;
     private Button questionbutton12;
+
+    public static ArrayList<Button> ActionsButtonsCollection = new ArrayList<Button>();
 
     public ActionsFragment()
     {
@@ -49,18 +53,19 @@ public class ActionsFragment extends Fragment implements View.OnClickListener
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        questionbutton1 = view.findViewById(R.id.questionbutton1);
-        questionbutton2 = view.findViewById(R.id.questionbutton2);
-        questionbutton3 = view.findViewById(R.id.questionbutton3);
-        questionbutton4 = view.findViewById(R.id.questionbutton4);
-        questionbutton5 = view.findViewById(R.id.questionbutton5);
-        questionbutton6 = view.findViewById(R.id.questionbutton6);
-        questionbutton7 = view.findViewById(R.id.questionbutton7);
-        questionbutton8 = view.findViewById(R.id.questionbutton8);
-        questionbutton9 = view.findViewById(R.id.questionbutton9);
-        questionbutton10 = view.findViewById(R.id.questionbutton10);
-        questionbutton11 = view.findViewById(R.id.questionbutton11);
-        questionbutton12 = view.findViewById(R.id.questionbutton12);
+        ActionsButtonsCollection.add(questionbutton1 = view.findViewById(R.id.questionbutton1));
+        ActionsButtonsCollection.add(questionbutton2 = view.findViewById(R.id.questionbutton2));
+        ActionsButtonsCollection.add(questionbutton3 = view.findViewById(R.id.questionbutton3));
+        ActionsButtonsCollection.add(questionbutton4 = view.findViewById(R.id.questionbutton4));
+        ActionsButtonsCollection.add(questionbutton5 = view.findViewById(R.id.questionbutton5));
+        ActionsButtonsCollection.add(questionbutton6 = view.findViewById(R.id.questionbutton6));
+        ActionsButtonsCollection.add(questionbutton7 = view.findViewById(R.id.questionbutton7));
+        ActionsButtonsCollection.add(questionbutton8 = view.findViewById(R.id.questionbutton8));
+        ActionsButtonsCollection.add(questionbutton9 = view.findViewById(R.id.questionbutton9));
+        ActionsButtonsCollection.add(questionbutton10 = view.findViewById(R.id.questionbutton10));
+        ActionsButtonsCollection.add(questionbutton11 = view.findViewById(R.id.questionbutton11));
+        ActionsButtonsCollection.add(questionbutton12 = view.findViewById(R.id.questionbutton12));
+
 
         questionbutton1.setOnClickListener(this);
         questionbutton2.setOnClickListener(this);
@@ -74,6 +79,7 @@ public class ActionsFragment extends Fragment implements View.OnClickListener
         questionbutton10.setOnClickListener(this);
         questionbutton11.setOnClickListener(this);
         questionbutton12.setOnClickListener(this);
+
     }
 
     @Override
@@ -95,6 +101,5 @@ public class ActionsFragment extends Fragment implements View.OnClickListener
             v.setSelected(false);
             v.getBackground().clearColorFilter();
         }
-
     }
 }

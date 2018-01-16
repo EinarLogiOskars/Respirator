@@ -11,6 +11,8 @@ import android.widget.Button;
 
 import com.group5.respirator.R;
 
+import java.util.ArrayList;
+
 public class QuestionFragment extends Fragment implements View.OnClickListener
 {
     private Button questionbutton1;
@@ -25,6 +27,8 @@ public class QuestionFragment extends Fragment implements View.OnClickListener
     private Button questionbutton10;
     private Button questionbutton11;
     private Button questionbutton12;
+
+    public static ArrayList<Button> QuestionButtonsCollection = new ArrayList<Button>();
 
     public QuestionFragment()
     {
@@ -47,18 +51,18 @@ public class QuestionFragment extends Fragment implements View.OnClickListener
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        questionbutton1 = view.findViewById(R.id.questionbutton1);
-        questionbutton2 = view.findViewById(R.id.questionbutton2);
-        questionbutton3 = view.findViewById(R.id.questionbutton3);
-        questionbutton4 = view.findViewById(R.id.questionbutton4);
-        questionbutton5 = view.findViewById(R.id.questionbutton5);
-        questionbutton6 = view.findViewById(R.id.questionbutton6);
-        questionbutton7 = view.findViewById(R.id.questionbutton7);
-        questionbutton8 = view.findViewById(R.id.questionbutton8);
-        questionbutton9 = view.findViewById(R.id.questionbutton9);
-        questionbutton10 = view.findViewById(R.id.questionbutton10);
-        questionbutton11 = view.findViewById(R.id.questionbutton11);
-        questionbutton12 = view.findViewById(R.id.questionbutton12);
+        QuestionButtonsCollection.add(questionbutton1 = view.findViewById(R.id.questionbutton1));
+        QuestionButtonsCollection.add(questionbutton2 = view.findViewById(R.id.questionbutton2));
+        QuestionButtonsCollection.add(questionbutton3 = view.findViewById(R.id.questionbutton3));
+        QuestionButtonsCollection.add(questionbutton4 = view.findViewById(R.id.questionbutton4));
+        QuestionButtonsCollection.add(questionbutton5 = view.findViewById(R.id.questionbutton5));
+        QuestionButtonsCollection.add(questionbutton6 = view.findViewById(R.id.questionbutton6));
+        QuestionButtonsCollection.add(questionbutton7 = view.findViewById(R.id.questionbutton7));
+        QuestionButtonsCollection.add(questionbutton8 = view.findViewById(R.id.questionbutton8));
+        QuestionButtonsCollection.add(questionbutton9 = view.findViewById(R.id.questionbutton9));
+        QuestionButtonsCollection.add(questionbutton10 = view.findViewById(R.id.questionbutton10));
+        QuestionButtonsCollection.add(questionbutton11 = view.findViewById(R.id.questionbutton11));
+        QuestionButtonsCollection.add(questionbutton12 = view.findViewById(R.id.questionbutton12));
 
         questionbutton1.setOnClickListener(this);
         questionbutton2.setOnClickListener(this);

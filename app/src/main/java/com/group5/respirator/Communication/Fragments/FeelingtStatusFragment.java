@@ -13,8 +13,11 @@ import android.widget.Toast;
 
 import com.group5.respirator.R;
 
+import java.util.ArrayList;
+
 
 public class FeelingtStatusFragment extends Fragment implements View.OnClickListener {
+
     private Button questionbutton1;
     private Button questionbutton2;
     private Button questionbutton3;
@@ -27,6 +30,8 @@ public class FeelingtStatusFragment extends Fragment implements View.OnClickList
     private Button questionbutton10;
     private Button questionbutton11;
     private Button questionbutton12;
+
+    public static ArrayList<Button> FeelingButtonsCollection = new ArrayList<Button>();
 
     public FeelingtStatusFragment() {
         // Required empty public constructor
@@ -46,18 +51,18 @@ public class FeelingtStatusFragment extends Fragment implements View.OnClickList
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        questionbutton1 = view.findViewById(R.id.questionbutton1);
-        questionbutton2 = view.findViewById(R.id.questionbutton2);
-        questionbutton3 = view.findViewById(R.id.questionbutton3);
-        questionbutton4 = view.findViewById(R.id.questionbutton4);
-        questionbutton5 = view.findViewById(R.id.questionbutton5);
-        questionbutton6 = view.findViewById(R.id.questionbutton6);
-        questionbutton7 = view.findViewById(R.id.questionbutton7);
-        questionbutton8 = view.findViewById(R.id.questionbutton8);
-        questionbutton9 = view.findViewById(R.id.questionbutton9);
-        questionbutton10 = view.findViewById(R.id.questionbutton10);
-        questionbutton11 = view.findViewById(R.id.questionbutton11);
-        questionbutton12 = view.findViewById(R.id.questionbutton12);
+        FeelingButtonsCollection.add(questionbutton1 = view.findViewById(R.id.questionbutton1));
+        FeelingButtonsCollection.add(questionbutton2 = view.findViewById(R.id.questionbutton2));
+        FeelingButtonsCollection.add(questionbutton3 = view.findViewById(R.id.questionbutton3));
+        FeelingButtonsCollection.add(questionbutton4 = view.findViewById(R.id.questionbutton4));
+        FeelingButtonsCollection.add(questionbutton5 = view.findViewById(R.id.questionbutton5));
+        FeelingButtonsCollection.add(questionbutton6 = view.findViewById(R.id.questionbutton6));
+        FeelingButtonsCollection.add(questionbutton7 = view.findViewById(R.id.questionbutton7));
+        FeelingButtonsCollection.add(questionbutton8 = view.findViewById(R.id.questionbutton8));
+        FeelingButtonsCollection.add(questionbutton9 = view.findViewById(R.id.questionbutton9));
+        FeelingButtonsCollection.add(questionbutton10 = view.findViewById(R.id.questionbutton10));
+        FeelingButtonsCollection.add(questionbutton11 = view.findViewById(R.id.questionbutton11));
+        FeelingButtonsCollection.add(questionbutton12 = view.findViewById(R.id.questionbutton12));
 
         questionbutton1.setOnClickListener(this);
         questionbutton2.setOnClickListener(this);
