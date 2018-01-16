@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Respirator_GruppeProjekt.iml" filepath="$PROJECT_DIR$/.idea/Respirator_GruppeProjekt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RespiratorProjekt2.iml" filepath="$PROJECT_DIR$/RespiratorProjekt2.iml" />
+      <module fileurl="file://C:\Users\Stuart\AndroidStudioProjects\RespiratorProjekt2\.idea\Respirator_GruppeProjekt.iml" filepath="C:\Users\Stuart\AndroidStudioProjects\RespiratorProjekt2\.idea\Respirator_GruppeProjekt.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
