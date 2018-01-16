@@ -76,93 +76,7 @@
     </android.support.constraint.ConstraintLayout>
 
 
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/constraintLayout2"
-        android:layout_width="1281dp"
-        android:layout_height="200dp"
-        android:background="@color/Grå"
-        app:layout_constraintBottom_toTopOf="@+id/callBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent">
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="187dp"
-            android:layout_height="126dp"
-
-            android:layout_marginBottom="37dp"
-            android:layout_marginEnd="300dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="37dp"
-            android:background="@drawable/reset"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/button4"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/touchSettingsBtn"
-            android:layout_width="187dp"
-            android:layout_height="128dp"
-            android:layout_marginBottom="36dp"
-            android:layout_marginEnd="60dp"
-            android:layout_marginStart="300dp"
-            android:layout_marginTop="36dp"
-            android:background="@drawable/touch"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/button4"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:onClick="touchSettings" />
-
-        <Button
-            android:id="@+id/soundBtn"
-            android:layout_width="187dp"
-            android:layout_height="126dp"
-
-            android:layout_marginBottom="37dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="37dp"
-            android:background="@drawable/sound"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:onClick="sound"/>
-
-        <Button
-            android:id="@+id/textSizeBtn"
-            android:layout_width="187dp"
-            android:layout_height="126dp"
-            android:layout_marginBottom="37dp"
-            android:layout_marginEnd="300dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="37dp"
-            android:background="@drawable/text_size"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/button4"
-            app:layout_constraintTop_toTopOf="parent"
-            android:onClick="textSize"/>
-
-        <Button
-            android:id="@+id/languageBtn"
-            android:layout_width="187dp"
-            android:layout_height="126dp"
-            android:layout_marginBottom="37dp"
-            android:layout_marginEnd="60dp"
-            android:layout_marginStart="300dp"
-            android:layout_marginTop="37dp"
-            android:background="@drawable/language"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/button4"
-            app:layout_constraintTop_toTopOf="parent"
-            android:onClick="language"/>
-
-    </android.support.constraint.ConstraintLayout>
 
 
     <Button
@@ -188,5 +102,88 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/homeBtn"
         app:layout_constraintVertical_bias="0.0" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="201dp"
+        android:background="@color/Gray"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/callBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_container">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/resetBtn"
+                style="@android:style/Widget.Material.Button.Colored"
+                android:layout_width="187dp"
+                android:layout_height="126dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="40dp"
+                android:text="Reset"
+                android:drawableTop="@drawable/ic_reset_icon"
+                android:drawableTint="@android:color/white"
+                />
+
+            <Button
+                android:id="@+id/touchSettingsBtn"
+                android:layout_width="187dp"
+                android:layout_height="126dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="40dp"
+                android:background="@color/colorAccent"
+                android:drawableTop="@drawable/ic_touch_app_black_50dp"
+                android:drawableTint="@android:color/white"
+                android:text="Touch"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/soundBtn"
+                android:layout_width="187dp"
+                android:layout_height="126dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="40dp"
+                android:background="@color/colorAccent"
+                android:drawableTop="@drawable/ic_volume_up_black_50dp"
+                android:drawableTint="@android:color/white"
+                android:text="Sound"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/textSizeBtn"
+                android:layout_width="187dp"
+                android:layout_height="126dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="40dp"
+                android:background="@color/colorAccent"
+                android:drawableTop="@drawable/ic_text_fields_black_50dp"
+                android:drawableTint="@android:color/white"
+                android:text="Text Size"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/languageBtn"
+                android:layout_width="187dp"
+                android:layout_height="126dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="40dp"
+                android:background="@color/colorAccent"
+                android:drawableTop="@drawable/ic_language_black_50dp"
+                android:drawableTint="@android:color/white"
+                android:text="Language"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
 
 </android.support.constraint.ConstraintLayout>
