@@ -15,7 +15,7 @@ import com.group5.respirator.Settings.Fragments.SoundFragment;
 import com.group5.respirator.Settings.Fragments.TextSizeFragment;
 import com.group5.respirator.Settings.Fragments.TouchFragment;
 
-public class SettingsActivity extends AppCompatActivity {
+public class SettingsActivity extends baseActivity {
 
     TouchFragment touchFrag;
     SoundFragment soundFrag;

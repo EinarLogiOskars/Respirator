@@ -119,71 +119,60 @@
             android:background="@android:color/holo_blue_light"
             android:orientation="horizontal">
 
-            <Button
+            <Button style="@android:style/Widget.Material.Button.Colored"
                 android:id="@+id/resetBtn"
-                style="@android:style/Widget.Material.Button.Colored"
                 android:layout_width="187dp"
                 android:layout_height="126dp"
                 android:layout_marginLeft="70dp"
                 android:layout_marginTop="40dp"
                 android:drawableTint="@android:color/white"
                 android:drawableTop="@drawable/ic_reset_icon"
-                android:text="Reset"
+                android:stateListAnimator="@animator/my_animator"
+                android:text="Reset" />
 
-                />
-
-            <Button
+            <Button style="@android:style/Widget.Material.Button.Colored"
                 android:id="@+id/touchSettingsBtn"
                 android:layout_width="187dp"
                 android:layout_height="126dp"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="40dp"
-                android:background="@color/colorAccent"
                 android:drawableTint="@android:color/white"
                 android:drawableTop="@drawable/ic_touch_app_black_50dp"
                 android:text="Touch"
-                android:textColor="@android:color/white"
-                android:textSize="20sp" />
+                android:stateListAnimator="@animator/my_animator"/>
 
-            <Button
+            <Button style="@android:style/Widget.Material.Button.Colored"
                 android:id="@+id/soundBtn"
                 android:layout_width="187dp"
                 android:layout_height="126dp"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="40dp"
-                android:background="@color/colorAccent"
                 android:drawableTint="@android:color/white"
                 android:drawableTop="@drawable/ic_volume_up_black_50dp"
-                android:stateListAnimator="@animator/my_animator"
                 android:text="Sound"
-                android:textColor="@android:color/white"
-                android:textSize="20sp" />
+                android:stateListAnimator="@animator/my_animator" />
 
-            <Button
+            <Button style="@android:style/Widget.Material.Button.Colored"
                 android:id="@+id/textSizeBtn"
                 android:layout_width="187dp"
                 android:layout_height="126dp"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="40dp"
-                android:background="@color/colorAccent"
                 android:drawableTint="@android:color/white"
                 android:drawableTop="@drawable/ic_text_fields_black_50dp"
                 android:text="Text Size"
-                android:textColor="@android:color/white"
-                android:textSize="20sp" />
+                android:stateListAnimator="@animator/my_animator"/>
 
-            <Button
+            <Button style="@android:style/Widget.Material.Button.Colored"
                 android:id="@+id/languageBtn"
                 android:layout_width="187dp"
                 android:layout_height="126dp"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="40dp"
-                android:background="@color/colorAccent"
                 android:drawableTint="@android:color/white"
                 android:drawableTop="@drawable/ic_language_black_50dp"
                 android:text="Language"
-                android:textColor="@android:color/white"
-                android:textSize="20sp" />
+                android:stateListAnimator="@animator/my_animator"/>
 
         </LinearLayout>
 
