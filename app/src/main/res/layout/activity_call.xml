@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroundGrey"
+    tools:context="com.group5.respirator.CallActivity">
+
+    <Button
+        android:id="@+id/confirmCallButton"
+        android:layout_width="340dp"
+        android:layout_height="320dp"
+        android:layout_marginEnd="200dp"
+        android:background="@drawable/confirm_call"
+        android:paddingTop="180dp"
+        android:text="Confirm Call"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cancelCallButton" />
+
+    <Button
+        android:id="@+id/cancelCallButton"
+        android:layout_width="340dp"
+        android:layout_height="320dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/cancel_call"
+        android:paddingTop="180dp"
+        android:text="Cancel Call"
+        android:textAlignment="center"
+
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

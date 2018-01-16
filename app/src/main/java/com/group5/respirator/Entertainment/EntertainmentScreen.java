@@ -1,7 +1,9 @@
 package com.group5.respirator.Entertainment;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AlertDialog;
@@ -10,13 +12,20 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.anup.tictactoe.Board;
+import com.example.bijannegari.galgespilprojekt.HangmanMainActivity;
+import com.group5.respirator.CallActivity;
 import com.group5.respirator.Entertainment.Fragments.ChessFragment;
 import com.group5.respirator.Entertainment.Fragments.MemoryFragment;
 import com.group5.respirator.Entertainment.Fragments.QuizFragment;
 import com.group5.respirator.Entertainment.Fragments.TicTacToeFragment;
 import com.group5.respirator.R;
+
+import org.tbadg.memory.MemoryActivity;
+
 
 public class EntertainmentScreen extends AppCompatActivity implements View.OnClickListener {
 
@@ -28,9 +37,13 @@ public class EntertainmentScreen extends AppCompatActivity implements View.OnCli
     ChessFragment chessFrag;
 
     private Button callButton;
-    private Button ticTacToeBtn;
-    private Button quizBtn;
-    private Button memoryBtn;
+    private Button hangmanButton;
+    private Button tictactoeButton;
+    private Button memoryButton;
+
+    private ImageView homeBtn;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,96 +62,55 @@ public class EntertainmentScreen extends AppCompatActivity implements View.OnCli
         chessFrag = ChessFragment.newInstance();
 
         callButton = (Button) findViewById(R.id.callButton);
-        ticTacToeBtn = (Button) findViewById(R.id.ticTacToeBtn);
-        quizBtn = (Button) findViewById(R.id.quizBtn);
-        memoryBtn = (Button) findViewById(R.id.memoryBtn);
+        hangmanButton = (Button) findViewById(R.id.hangmanButton);
+        tictactoeButton = (Button) findViewById(R.id.tictactoeButton);
+        memoryButton = (Button) findViewById(R.id.memoryButton);
+        homeBtn = (ImageView) findViewById(R.id.homeBtn);
 
-        ticTacToeBtn.setOnClickListener(this);
-        quizBtn.setOnClickListener(this);
-        memoryBtn.setOnClickListener(this);
+        hangmanButton.setOnClickListener(this);
+        tictactoeButton.setOnClickListener(this);
+        memoryButton.setOnClickListener(this);
         callButton.setOnClickListener(this);
-    }
-
-    public void openQuiz(View view) {
-
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_container, quizFrag);
-        fragmentTransaction.commit();
-
-    }
-
-    public void openTicTacToe(View view) {
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_container, ticTacToeFrag);
-        fragmentTransaction.commit();
-    }
-
-
-    public void openMemoryGame(View view) {
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_container, memoryFrag);
-        fragmentTransaction.commit();
-    }
-
-    public void openChessGame(View view) {
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_container, chessFrag);
-        fragmentTransaction.commit();
-    }
-
-    public void home(View view) {
-
-        finish();
+        homeBtn.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
-        if (view == ticTacToeBtn){
+        if (view == hangmanButton){
+            int resid = R.id.fragment_container;
+            Fragment f = new HangmanMainActivity();
+            Bundle b= new Bundle();
+            b.putInt("resid",resid);
+            f.setArguments(b);
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.fragment_container, ticTacToeFrag);
+            fragmentTransaction.replace(R.id.fragment_container, f);
+            fragmentTransaction.commit();
+
+
+        }
+        else if (view == tictactoeButton){
+            int resid = R.id.fragment_container;
+            Fragment f = new Board();
+            Bundle b = new Bundle();
+            b.putInt("resid",resid);
+            f.setArguments(b);
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, f);
             fragmentTransaction.commit();
         }
-        else if (view == quizBtn){
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.fragment_container, quizFrag);
-            fragmentTransaction.commit();
-        }
-        else if (view == memoryBtn){
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        else if (view == memoryButton){
+            Intent Intent = new Intent(this, MemoryActivity.class);
+            startActivity(Intent);
+            /*FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, memoryFrag);
-            fragmentTransaction.commit();
+            fragmentTransaction.commit();*/
         }
         else if (view == callButton){
-            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-
-            // Setting Alert Dialog Title
-            alertDialogBuilder.setTitle("Konfirmer kald!!!");
-
-            // Icon Of Alert Dialog. Har bare valgt et tilfældigt billed, det ændrer vi
-//            alertDialogBuilder.setIcon(R.drawable.thumbs);
-
-            // Setting Alert Dialog Message
-            alertDialogBuilder.setMessage("Are you sure, You want to call?");
-
-            // Man kan cancel alertDialog ved at trykke uden for boksen
-            alertDialogBuilder.setCancelable(true);
-
-            alertDialogBuilder.setPositiveButton("Kald!", new DialogInterface.OnClickListener() {
-
-                public void onClick(DialogInterface arg0, int arg1) {
-                    finish();
-                }
-            });
-
-            alertDialogBuilder.setNeutralButton("Cancel", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    Toast.makeText(getApplicationContext(),"You clicked on Cancel",Toast.LENGTH_SHORT).show();
-                }
-            });
-
-            AlertDialog alertDialog = alertDialogBuilder.create();
-            alertDialog.show();
+            Intent callIntent = new Intent(this,CallActivity.class);
+            startActivity(callIntent);
+        }
+        else if (view == homeBtn){
+            finish();
         }
     }
 }

@@ -13,7 +13,6 @@ import android.widget.TextView;
 
 import com.group5.respirator.Communication.Communication_akt;
 import com.group5.respirator.Entertainment.EntertainmentScreen;
-import com.group5.respirator.R;
 import com.group5.respirator.Settings.SettingsActivity;
 
 import java.sql.Time;
@@ -77,6 +76,12 @@ public class MainActivity extends AppCompatActivity implements OnClickListener
         startActivity(settingsIntent);
 
     }
+
+    public void call() {
+        Intent callIntent = new Intent(this,CallActivity.class);
+        startActivity(callIntent);
+    }
+
     public void QuickTapButton(View v)
     {
         AlphaAnimation alphaDown = new AlphaAnimation(1.0f, 0.3f);
@@ -93,6 +98,8 @@ public class MainActivity extends AppCompatActivity implements OnClickListener
     {
         switch (v.getId()) {
             case R.id.callBtn:
+                QuickTapButton(v);
+                call();
                 break;
             case R.id.comBtn:
                 QuickTapButton(v);

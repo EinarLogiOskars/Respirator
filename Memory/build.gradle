@@ -1,0 +1,86 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+    }
+}
+apply plugin: 'com.android.library'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.google.android.gms:play-services:7.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:appcompat-v7:22.1.0'
+}
+
+def major = 1
+def minor = 5
+def rev = "git rev-list master --first-parent --count".execute().text.toInteger()
+def verName = "${major}.${minor}.${rev}"
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        //applicationId "org.tbadg.memory"
+        minSdkVersion 14
+        targetSdkVersion 21
+
+        versionCode sprintf("%d%02d%04d", major, minor, rev).toInteger()
+        versionName verName
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("myreleasekey.keystore")
+            keyAlias "MyReleaseKey"
+        }
+    }
+
+    sourceSets {
+        instrumentTest.setRoot('tests')
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+
+    buildTypes {
+        debug {
+            //applicationIdSuffix ".debug"
+            versionNameSuffix ".dbg"
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+        }
+
+        release {
+            versionNameSuffix ".rls"
+            minifyEnabled true
+            //shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+
+            signingConfig signingConfigs.release
+
+            libraryVariants.all { variant ->
+                variant.outputs.each { output ->
+                    if (output.outputFile.name.endsWith("release.apk")) {
+                        output.outputFile = new File(output.outputFile.parent,
+                                output.outputFile.name.replace(".apk", "-" + verName + ".apk"))
+                    }
+                }
+            }
+        }
+    }
+
+    gradle.taskGraph.afterTask { Task task, TaskState state ->
+        if (task.name.equals("assembleRelease")) {
+            File proguard = new File("releases/proguard-map.txt")
+            proguard.renameTo("releases/Proguard-map-" + verName + ".txt")
+        }
+    }
+}
