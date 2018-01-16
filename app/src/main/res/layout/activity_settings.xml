@@ -90,12 +90,12 @@
             android:id="@+id/button2"
             android:layout_width="187dp"
             android:layout_height="126dp"
-
             android:layout_marginBottom="37dp"
             android:layout_marginEnd="300dp"
             android:layout_marginStart="60dp"
             android:layout_marginTop="37dp"
-            android:background="@drawable/reset"
+
+            android:background="@drawable/nulstil"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/button4"
             app:layout_constraintStart_toStartOf="parent"
@@ -120,7 +120,6 @@
             android:id="@+id/soundBtn"
             android:layout_width="187dp"
             android:layout_height="126dp"
-
             android:layout_marginBottom="37dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
@@ -155,12 +154,12 @@
             android:layout_marginEnd="60dp"
             android:layout_marginStart="300dp"
             android:layout_marginTop="37dp"
-            android:background="@drawable/language"
+            android:background="@drawable/sprog"
+            android:onClick="language"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/button4"
-            app:layout_constraintTop_toTopOf="parent"
-            android:onClick="language"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
     </android.support.constraint.ConstraintLayout>
 

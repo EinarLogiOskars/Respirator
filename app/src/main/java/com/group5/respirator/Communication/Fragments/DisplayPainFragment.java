@@ -6,8 +6,10 @@ import android.graphics.BitmapFactory;
 import android.graphics.BitmapShader;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.LightingColorFilter;
 import android.graphics.Paint;
 import android.graphics.Point;
+import android.graphics.PorterDuff;
 import android.graphics.Rect;
 import android.graphics.Shader;
 import android.graphics.drawable.BitmapDrawable;
@@ -19,14 +21,24 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AlphaAnimation;
+import android.widget.Button;
 import android.widget.RelativeLayout;
 import com.group5.respirator.R;
 import java.util.ArrayList;
 
 
-public class DisplayPainFragment extends Fragment
+public class DisplayPainFragment extends Fragment implements View.OnClickListener
 {
+    private Button questionbutton1;
+    private Button EraseButton;
+    private Button questionbutton4;
+    private Button questionbutton5;
+    private Button questionbutton6;
+    private RelativeLayout relativeLayout1;
+    private RelativeLayout relativeLayout2;
 
+    public static ArrayList<Button> PainButtonsCollection = new ArrayList<Button>();
 
     public DisplayPainFragment()
     {
@@ -43,8 +55,6 @@ public class DisplayPainFragment extends Fragment
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-
-
     }
 
     @Override
@@ -59,13 +69,81 @@ public class DisplayPainFragment extends Fragment
 
         View rootView = inflater.inflate(R.layout.fragment_display_pain, container, false);
 
-        RelativeLayout relativeLayout1 = rootView.findViewById(R.id.rect1);
-        RelativeLayout relativeLayout2 = rootView.findViewById(R.id.rect2);
+        relativeLayout1 = rootView.findViewById(R.id.rect1);
+        relativeLayout2 = rootView.findViewById(R.id.rect2);
+
+        questionbutton1 = rootView.findViewById(R.id.questionbutton1);
+        EraseButton = rootView.findViewById(R.id.questionbutton3);
+        questionbutton4 = rootView.findViewById(R.id.questionbutton4);
+        questionbutton5 = rootView.findViewById(R.id.questionbutton5);
+        questionbutton6 = rootView.findViewById(R.id.questionbutton6);
+
+        PainButtonsCollection.add(questionbutton1);
+        PainButtonsCollection.add(questionbutton4);
+        PainButtonsCollection.add(questionbutton5);
+        PainButtonsCollection.add(questionbutton6);
+
+        questionbutton1.setOnClickListener(this);
+        EraseButton.setOnClickListener(this);
+        questionbutton4.setOnClickListener(this);
+        questionbutton5.setOnClickListener(this);
+        questionbutton6.setOnClickListener(this);
 
         relativeLayout1.addView(new Drawboard(getActivity()));
         relativeLayout2.addView(new Drawboard(getActivity()));
 
         return rootView;
+    }
+
+    @Override
+    public void onClick(View v)
+    {
+        ButtonReleaser(v.getId());
+
+        if (v.isSelected() == false)
+        {
+            if(v != EraseButton)
+            {
+                v.setSelected(true);
+                v.getBackground().setColorFilter(new LightingColorFilter(Color.parseColor("#81858d"),0));
+            }
+            else
+            {
+                relativeLayout1.removeAllViews();
+                relativeLayout2.removeAllViews();
+                relativeLayout1.addView(new Drawboard(getActivity()));
+                relativeLayout2.addView(new Drawboard(getActivity()));
+
+                QuickTapButton(v);
+            }
+
+        } else
+        {
+            v.setSelected(false);
+            v.getBackground().clearColorFilter();
+        }
+
+    }
+    public void QuickTapButton(View v)
+    {
+        AlphaAnimation alphaDown = new AlphaAnimation(1.0f, 0.3f);
+        AlphaAnimation alphaUp = new AlphaAnimation(0.3f, 1.0f);
+        alphaDown.setDuration(1000);
+        alphaUp.setDuration(500);
+        alphaDown.setFillAfter(true);
+        alphaUp.setFillAfter(true);
+        v.startAnimation(alphaUp);
+    }
+    public void ButtonReleaser(int b)
+    {
+        for (int i = 0; i < PainButtonsCollection.size(); i++)
+        {
+            if(b != PainButtonsCollection.get(i).getId())
+            {
+                PainButtonsCollection.get(i).getBackground().clearColorFilter();
+                PainButtonsCollection.get(i).setSelected(false);
+            }
+        }
     }
 
     private class Drawboard extends View {
@@ -93,7 +171,8 @@ public class DisplayPainFragment extends Fragment
         }
 
         @Override
-        public void onDraw(Canvas c) {
+        public void onDraw(Canvas c)
+        {
             for (Point p : touchPoint)
             {
                 c.drawBitmap(bitmapResized, p.x, p.y, paintType);
