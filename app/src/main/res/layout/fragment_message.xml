@@ -10,9 +10,25 @@
 
     <!-- TODO: Update blank fragment layout -->
 
+    <Button
+        android:id="@+id/PostButton"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/write"
+        android:paddingTop="75dp"
+        android:text="Skriv"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PatientMessage" />
+
     <EditText
         android:id="@+id/PatientMessage"
-        android:layout_width="432dp"
+        android:layout_width="450dp"
         android:layout_height="214dp"
         android:layout_marginStart="55dp"
         android:background="@color/DisplayGrey"
@@ -20,26 +36,36 @@
         android:gravity="top|left"
         android:inputType="textPersonName"
         android:singleLine="false"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/EraseButton"
-        android:layout_width="173dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="368dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/clear2"
+        android:paddingTop="65dp"
         android:text="Slet alt"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PatientMessage" />
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/PostButton"
+        app:layout_constraintTop_toBottomOf="@+id/DisplayMessage" />
 
     <ListView
-        android:layout_width="432dp"
+        android:id="@+id/DisplayMessage"
+        android:layout_width="450dp"
         android:layout_height="214dp"
         android:layout_marginStart="89dp"
         android:background="@android:color/background_light"
         app:layout_constraintStart_toEndOf="@+id/PatientMessage"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ListView>
 
 </android.support.constraint.ConstraintLayout>
