@@ -10,10 +10,72 @@
 
     <!-- TODO: Update blank fragment layout -->
 
+    <Button
+        android:id="@+id/questionbutton6"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/strongpain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionbutton5" />
+
+    <Button
+        android:id="@+id/questionbutton5"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:background="@drawable/mildpain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/questionbutton4"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/extremeain"
+        app:layout_constraintStart_toEndOf="@+id/questionbutton6"
+        app:layout_constraintTop_toBottomOf="@+id/questionbutton1" />
+
+    <Button
+        android:id="@+id/questionbutton3"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/clearbutton"
+        android:text="Fjern Markering"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:paddingTop="65dp"
+        app:layout_constraintStart_toEndOf="@+id/questionbutton2"
+        app:layout_constraintTop_toBottomOf="@+id/questionbutton4" />
+
+    <Button
+        android:id="@+id/questionbutton2"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionbutton6" />
+
+    <Button
+        android:id="@+id/questionbutton1"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="55dp"
+        android:background="@drawable/moderatepain"
+        app:layout_constraintStart_toEndOf="@+id/questionbutton5"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <RelativeLayout
         android:id="@+id/rect2"
         android:layout_width="225dp"
-        android:layout_height="385dp"
+        android:layout_height="402dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginEnd="280dp"
@@ -28,7 +90,7 @@
     <RelativeLayout
         android:id="@+id/rect1"
         android:layout_width="225dp"
-        android:layout_height="385dp"
+        android:layout_height="402dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="25dp"
