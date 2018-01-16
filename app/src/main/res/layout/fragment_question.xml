@@ -26,6 +26,8 @@
         android:layout_height="126dp"
         android:layout_marginStart="55dp"
         android:background="@drawable/whatsisthetime"
+        app:layout_constraintBottom_toTopOf="@+id/button10"
+        app:layout_constraintEnd_toStartOf="@+id/reset"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

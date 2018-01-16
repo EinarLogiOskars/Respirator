@@ -39,7 +39,7 @@ public class Highscore extends Fragment implements View.OnClickListener {
                              Bundle savedInstanceState) {
 
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.activity_galge_game, container, false);
+        View v = inflater.inflate(R.layout.activity_highscore, container, false);
         b = getArguments();
         resid = b.getInt("resid");
 

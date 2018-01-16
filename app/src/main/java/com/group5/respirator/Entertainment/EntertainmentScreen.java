@@ -12,14 +12,19 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.anup.tictactoe.Board;
 import com.example.bijannegari.galgespilprojekt.HangmanMainActivity;
 import com.group5.respirator.Entertainment.Fragments.ChessFragment;
 import com.group5.respirator.Entertainment.Fragments.MemoryFragment;
 import com.group5.respirator.Entertainment.Fragments.QuizFragment;
 import com.group5.respirator.Entertainment.Fragments.TicTacToeFragment;
 import com.group5.respirator.R;
+
+import org.tbadg.memory.MemoryActivity;
+
 
 public class EntertainmentScreen extends AppCompatActivity implements View.OnClickListener {
 
@@ -31,9 +36,11 @@ public class EntertainmentScreen extends AppCompatActivity implements View.OnCli
     ChessFragment chessFrag;
 
     private Button callButton;
-    private Button ticTacToeBtn;
-    private Button quizBtn;
-    private Button memoryBtn;
+    private Button hangmanButton;
+    private Button tictactoeButton;
+    private Button memoryButton;
+
+    private ImageView homeBtn;
 
 
 
@@ -54,51 +61,21 @@ public class EntertainmentScreen extends AppCompatActivity implements View.OnCli
         chessFrag = ChessFragment.newInstance();
 
         callButton = (Button) findViewById(R.id.callButton);
-        ticTacToeBtn = (Button) findViewById(R.id.ticTacToeBtn);
-        quizBtn = (Button) findViewById(R.id.quizBtn);
-        memoryBtn = (Button) findViewById(R.id.memoryBtn);
+        hangmanButton = (Button) findViewById(R.id.hangmanButton);
+        tictactoeButton = (Button) findViewById(R.id.tictactoeButton);
+        memoryButton = (Button) findViewById(R.id.memoryButton);
+        homeBtn = (ImageView) findViewById(R.id.homeBtn);
 
-        ticTacToeBtn.setOnClickListener(this);
-        quizBtn.setOnClickListener(this);
-        memoryBtn.setOnClickListener(this);
+        hangmanButton.setOnClickListener(this);
+        tictactoeButton.setOnClickListener(this);
+        memoryButton.setOnClickListener(this);
         callButton.setOnClickListener(this);
-    }
-
-    public void openQuiz(View view) {
-
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_container, quizFrag);
-        fragmentTransaction.commit();
-
-    }
-
-    /*public void openTicTacToe(View view) {
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_container, ticTacToeFrag);
-        fragmentTransaction.commit();
-    }*/
-
-
-    public void openMemoryGame(View view) {
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_container, memoryFrag);
-        fragmentTransaction.commit();
-    }
-
-    public void openChessGame(View view) {
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_container, chessFrag);
-        fragmentTransaction.commit();
-    }
-
-    public void home(View view) {
-
-        finish();
+        homeBtn.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
-        if (view == ticTacToeBtn){
+        if (view == hangmanButton){
             int resid = R.id.fragment_container;
             Fragment f = new HangmanMainActivity();
             Bundle b= new Bundle();
@@ -107,19 +84,25 @@ public class EntertainmentScreen extends AppCompatActivity implements View.OnCli
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, f);
             fragmentTransaction.commit();
-            //Intent intent = new Intent(this, HangmanMainActivity.class);
-            //startActivity(intent);
+
 
         }
-        else if (view == quizBtn){
+        else if (view == tictactoeButton){
+            int resid = R.id.fragment_container;
+            Fragment f = new Board();
+            Bundle b = new Bundle();
+            b.putInt("resid",resid);
+            f.setArguments(b);
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.fragment_container, quizFrag);
+            fragmentTransaction.replace(R.id.fragment_container, f);
             fragmentTransaction.commit();
         }
-        else if (view == memoryBtn){
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        else if (view == memoryButton){
+            Intent Intent = new Intent(this, MemoryActivity.class);
+            startActivity(Intent);
+            /*FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, memoryFrag);
-            fragmentTransaction.commit();
+            fragmentTransaction.commit();*/
         }
         else if (view == callButton){
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
@@ -152,6 +135,9 @@ public class EntertainmentScreen extends AppCompatActivity implements View.OnCli
 
             AlertDialog alertDialog = alertDialogBuilder.create();
             alertDialog.show();
+        }
+        else if (view == homeBtn){
+            finish();
         }
     }
 }
