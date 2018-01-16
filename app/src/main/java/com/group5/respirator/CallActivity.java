@@ -19,14 +19,19 @@ public class CallActivity extends AppCompatActivity implements OnClickListener {
         confirmCallButton = (Button) findViewById(R.id.confirmCallButton);
         cancelCallButton = (Button) findViewById(R.id.cancelCallButton);
 
+        confirmCallButton.setOnClickListener(this);
+        cancelCallButton.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
         if (view == confirmCallButton){
-            //some weird shit here!
+            // Call effect, sound, something....?
+            System.out.print("Call confirmed pressed");
+            finish();
         }
         else if (view == cancelCallButton){
+            System.out.print("Call cancel pressed");
             finish();
         }
     }

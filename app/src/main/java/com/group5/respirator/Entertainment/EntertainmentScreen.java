@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import com.anup.tictactoe.Board;
 import com.example.bijannegari.galgespilprojekt.HangmanMainActivity;
+import com.group5.respirator.CallActivity;
 import com.group5.respirator.Entertainment.Fragments.ChessFragment;
 import com.group5.respirator.Entertainment.Fragments.MemoryFragment;
 import com.group5.respirator.Entertainment.Fragments.QuizFragment;
@@ -105,36 +106,8 @@ public class EntertainmentScreen extends AppCompatActivity implements View.OnCli
             fragmentTransaction.commit();*/
         }
         else if (view == callButton){
-            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-
-            // Setting Alert Dialog Title
-            alertDialogBuilder.setTitle("Konfirmer kald!!!");
-
-            // Icon Of Alert Dialog. Har bare valgt et tilfældigt billed, det ændrer vi
-            alertDialogBuilder.setIcon(R.drawable.thumbs);
-
-            // Setting Alert Dialog Message
-            alertDialogBuilder.setMessage("Are you sure, You want to call?");
-
-            // Man kan cancel alertDialog ved at trykke uden for boksen
-            alertDialogBuilder.setCancelable(true);
-
-            alertDialogBuilder.setPositiveButton("Kald!", new DialogInterface.OnClickListener() {
-
-                public void onClick(DialogInterface arg0, int arg1) {
-                    finish();
-                }
-            });
-
-            alertDialogBuilder.setNeutralButton("Cancel", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    Toast.makeText(getApplicationContext(),"You clicked on Cancel",Toast.LENGTH_SHORT).show();
-                }
-            });
-
-            AlertDialog alertDialog = alertDialogBuilder.create();
-            alertDialog.show();
+            Intent callIntent = new Intent(this,CallActivity.class);
+            startActivity(callIntent);
         }
         else if (view == homeBtn){
             finish();

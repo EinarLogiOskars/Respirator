@@ -1,5 +1,6 @@
 package com.group5.respirator.Communication;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.LightingColorFilter;
 import android.support.v4.app.Fragment;
@@ -16,6 +17,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.group5.respirator.CallActivity;
 import com.group5.respirator.Communication.Fragments.ActionsFragment;
 import com.group5.respirator.Communication.Fragments.DisplayPainFragment;
 import com.group5.respirator.Communication.Fragments.FeelingtStatusFragment;
@@ -45,6 +47,7 @@ public class Communication_akt extends AppCompatActivity implements View.OnClick
     private Button QuestionButton;
     private Button ActionsButton;
     private Button HomeButton;
+    private Button callBtn;
     private FragmentTransaction fragmentTransaction;
 
     private ArrayList<Button> ButtonsCollection = new ArrayList<Button>();
@@ -74,6 +77,7 @@ public class Communication_akt extends AppCompatActivity implements View.OnClick
         QuestionButton = (Button) findViewById(R.id.button5);
         ActionsButton = (Button) findViewById(R.id.button6);
         HomeButton = (Button) findViewById(R.id.button8);
+        callBtn = (Button) findViewById(R.id.callBtn);
 
         ButtonsCollection.add(Messagebutton);
         ButtonsCollection.add(PainButton);
@@ -88,6 +92,7 @@ public class Communication_akt extends AppCompatActivity implements View.OnClick
         QuestionButton.setOnClickListener(this);
         ActionsButton.setOnClickListener(this);
         HomeButton.setOnClickListener(this);
+        callBtn.setOnClickListener(this);
 
     }
 
@@ -223,6 +228,11 @@ public class Communication_akt extends AppCompatActivity implements View.OnClick
         finish();
     }
 
+    public void Call(){
+        Intent callIntent = new Intent(this, CallActivity.class);
+        startActivity(callIntent);
+    }
+
     @Override
     public void onClick(View v)
     {
@@ -244,6 +254,9 @@ public class Communication_akt extends AppCompatActivity implements View.OnClick
                 break;
             case R.id.button8:
                 Home();
+                break;
+            case R.id.callBtn:
+                Call();
                 break;
             default:
                 break;
