@@ -81,7 +81,7 @@ public class GameOver extends Fragment implements View.OnClickListener {
 
     public void onClick(View view) {
         if (view == spilIgenButton) {
-            Fragment frag = new GalgeGame();
+            Fragment frag = new ChooseWordManually();
             frag.setArguments(b);
             getFragmentManager().beginTransaction().replace(resid, frag).commit();
             //Intent intent = new Intent(this, GalgeGame.class);

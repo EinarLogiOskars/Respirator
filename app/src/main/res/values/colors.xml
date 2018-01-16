@@ -7,5 +7,6 @@
     <color name="Gray">#2b2f3a</color>
     <color name="Grey">#2b2f3a</color>
     <color name="bggrey">#3a3a3a</color>
-    <color name="BackgroundGrey">#3a3a3a</color>
+    <color name="BackgroundGrey">#FF717171</color>
+    <color name="white">#3a3a3a</color>
 </resources>

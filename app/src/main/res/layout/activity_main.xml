@@ -41,11 +41,11 @@
         android:layout_marginStart="200dp"
         android:layout_marginTop="190dp"
         android:background="@drawable/com_btn"
+        android:onClick="communication"
         app:layout_constraintBottom_toTopOf="@+id/callBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="communication"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/entBtn"
@@ -56,10 +56,10 @@
         android:layout_marginStart="830dp"
         android:layout_marginTop="190dp"
         android:background="@drawable/ent_btn"
+        android:onClick="entertainment"
         app:layout_constraintBottom_toTopOf="@+id/callBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="entertainment"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

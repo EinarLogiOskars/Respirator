@@ -1,1 +1,1 @@
-include ':app', ':hangmanLibrary', ':Tic-Tac-Toe---Android', ':Memory'
+include ':app', ':hangmanLibrary', ':Memory', ':Tic-Tac-Toe---Android'
