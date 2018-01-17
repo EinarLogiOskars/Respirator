@@ -16,11 +16,9 @@ import android.content.Intent;
 
 public class HangmanMainActivity extends Fragment implements View.OnClickListener {
 
-
     static Galgelogik logik = new Galgelogik();
 
     private Button button1;
-  //  private Button button2;
     private Button highscoreButton;
     int resid;
     Bundle b;
@@ -28,18 +26,15 @@ public class HangmanMainActivity extends Fragment implements View.OnClickListene
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
         // Inflate the layout for this fragment
         View v =  inflater.inflate(R.layout.hangman_activity_main, container, false);
         b = getArguments();
         resid = b.getInt("resid");
 
         button1 = (Button) v.findViewById(R.id.button1);
-     //   button2 = (Button) v.findViewById(R.id.button2);
         highscoreButton = (Button) v.findViewById(R.id.highscoreButton);
 
         button1.setOnClickListener(this);
-//        button2.setOnClickListener(this);
         highscoreButton.setOnClickListener(this);
 
         new AsyncTaskRunner().execute();
@@ -57,9 +52,7 @@ public class HangmanMainActivity extends Fragment implements View.OnClickListene
             frag.setArguments(b);
             getFragmentManager().beginTransaction().replace(resid, frag).commit();
         }
-        /*else if(view == button2){
-            finish();
-        }*/
+
         else if(view == highscoreButton){
             Fragment frag = new Highscore();
             frag.setArguments(b);
@@ -71,7 +64,6 @@ public class HangmanMainActivity extends Fragment implements View.OnClickListene
     private class AsyncTaskRunner extends AsyncTask<String, String, String>
     {
         private String response;
-        //  final AlertDialog.Builder alert = new AlertDialog.Builder(HangmanMainActivity.this);
 
         protected String doInBackground(String... params)
         {

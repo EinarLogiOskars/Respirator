@@ -1,8 +1,8 @@
 package com.group5.respirator.Entertainment;
-
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -13,6 +13,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.anup.tictactoe.Board;
@@ -43,6 +44,8 @@ public class EntertainmentScreen extends AppCompatActivity implements View.OnCli
 
     private ImageView homeBtn;
 
+    private TextView entertainmentTitle;
+
 
 
     @Override
@@ -66,6 +69,7 @@ public class EntertainmentScreen extends AppCompatActivity implements View.OnCli
         tictactoeButton = (Button) findViewById(R.id.tictactoeButton);
         memoryButton = (Button) findViewById(R.id.memoryButton);
         homeBtn = (ImageView) findViewById(R.id.homeBtn);
+        entertainmentTitle = (TextView) findViewById(R.id.entertainmentTitle);
 
         hangmanButton.setOnClickListener(this);
         tictactoeButton.setOnClickListener(this);
@@ -79,15 +83,17 @@ public class EntertainmentScreen extends AppCompatActivity implements View.OnCli
         if (view == hangmanButton){
             int resid = R.id.fragment_container;
             Fragment f = new HangmanMainActivity();
-            Bundle b= new Bundle();
+            Bundle b = new Bundle();
             b.putInt("resid",resid);
             f.setArguments(b);
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, f);
             fragmentTransaction.commit();
-
-
+            if (entertainmentTitle.getVisibility() == View.VISIBLE ){
+                entertainmentTitle.setVisibility(View.GONE);
+            }
         }
+
         else if (view == tictactoeButton){
             int resid = R.id.fragment_container;
             Fragment f = new Board();
@@ -97,17 +103,23 @@ public class EntertainmentScreen extends AppCompatActivity implements View.OnCli
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, f);
             fragmentTransaction.commit();
+            if (entertainmentTitle.getVisibility() == View.VISIBLE ){
+                entertainmentTitle.setVisibility(View.GONE);
+            }
         }
         else if (view == memoryButton){
             Intent Intent = new Intent(this, MemoryActivity.class);
             startActivity(Intent);
-            /*FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.fragment_container, memoryFrag);
-            fragmentTransaction.commit();*/
+            if (entertainmentTitle.getVisibility() == View.VISIBLE ){
+                entertainmentTitle.setVisibility(View.GONE);
+            }
         }
         else if (view == callButton){
             Intent callIntent = new Intent(this,CallActivity.class);
             startActivity(callIntent);
+            if (entertainmentTitle.getVisibility() == View.VISIBLE ){
+                entertainmentTitle.setVisibility(View.GONE);
+            }
         }
         else if (view == homeBtn){
             finish();

@@ -70,9 +70,7 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
         languageSettingBtn.setOnClickListener(this);
         homeBtn.setOnClickListener(this);
 
-        textView1 = (TextView) findViewById(R.id.title1);
         textView2 = (TextView) findViewById(R.id.title2);
-        textView3 = (TextView) findViewById(R.id.title3);
 
     }
 
@@ -80,10 +78,8 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.touchSettingsBtn:
-                if (textView1.getVisibility() == View.VISIBLE) {
-                    textView1.setVisibility(View.GONE);
+                if (textView2.getVisibility() == View.VISIBLE) {
                     textView2.setVisibility(View.GONE);
-                    textView3.setVisibility(View.GONE);
                 }
 
                 fragmentTransaction = fragmentManager.beginTransaction();
@@ -91,10 +87,8 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
                 fragmentTransaction.commit();
                 break;
             case R.id.soundBtn:
-                if (textView1.getVisibility() == View.VISIBLE) {
-                    textView1.setVisibility(View.GONE);
+                if (textView2.getVisibility() == View.VISIBLE) {
                     textView2.setVisibility(View.GONE);
-                    textView3.setVisibility(View.GONE);
                 }
 
                 fragmentTransaction = fragmentManager.beginTransaction();
@@ -102,10 +96,8 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
                 fragmentTransaction.commit();
                 break;
             case R.id.textSizeBtn:
-                if (textView1.getVisibility() == View.VISIBLE) {
-                    textView1.setVisibility(View.GONE);
+                if (textView2.getVisibility() == View.VISIBLE) {
                     textView2.setVisibility(View.GONE);
-                    textView3.setVisibility(View.GONE);
                 }
 
                 fragmentTransaction = fragmentManager.beginTransaction();
@@ -113,10 +105,8 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
                 fragmentTransaction.commit();
                 break;
             case R.id.languageBtn:
-                if (textView1.getVisibility() == View.VISIBLE) {
-                    textView1.setVisibility(View.GONE);
+                if (textView2.getVisibility() == View.VISIBLE) {
                     textView2.setVisibility(View.GONE);
-                    textView3.setVisibility(View.GONE);
                 }
 
                 fragmentTransaction = fragmentManager.beginTransaction();
