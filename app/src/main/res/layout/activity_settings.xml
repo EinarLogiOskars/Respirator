@@ -39,7 +39,7 @@
             android:layout_marginTop="59dp"
             android:text='Start med "RESET".'
             android:textColor="@android:color/white"
-            android:textSize="30sp"
+            android:textSize="?attr/font_large"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/title1" />
@@ -53,7 +53,7 @@
             android:layout_marginTop="50dp"
             android:text="Hvordan fungere det?"
             android:textColor="@android:color/white"
-            android:textSize="36sp"
+            android:textSize="?attr/font_xlarge"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -67,7 +67,7 @@
             android:layout_marginTop="56dp"
             android:text="Derefter opsæt app ved at følge dem viste rækkefølge 1-4!"
             android:textColor="@android:color/white"
-            android:textSize="30sp"
+            android:textSize="?attr/font_large"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/title2" />
@@ -96,6 +96,7 @@
             android:layout_marginTop="37dp"
 
 
+            android:background="@drawable/nulstil"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/button4"
             app:layout_constraintStart_toStartOf="parent"
@@ -110,11 +111,12 @@
             android:layout_marginStart="300dp"
             android:layout_marginTop="36dp"
 
+            android:background="@drawable/touch"
+            android:onClick="touchSettings"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/button4"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:onClick="touchSettings" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/soundBtn"
@@ -125,11 +127,12 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="37dp"
 
+            android:background="@drawable/sound"
+            android:onClick="sound"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:onClick="sound"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/textSizeBtn"
@@ -140,11 +143,12 @@
             android:layout_marginStart="60dp"
             android:layout_marginTop="37dp"
 
+            android:background="@drawable/text_size"
+            android:onClick="textSize"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/button4"
-            app:layout_constraintTop_toTopOf="parent"
-            android:onClick="textSize"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/languageBtn"
@@ -155,6 +159,7 @@
             android:layout_marginStart="300dp"
             android:layout_marginTop="37dp"
 
+            android:background="@drawable/sprog"
             android:onClick="language"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -169,6 +174,7 @@
         android:layout_width="1281dp"
         android:layout_height="100dp"
 
+        android:background="@drawable/button1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

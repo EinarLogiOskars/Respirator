@@ -1,12 +1,12 @@
 package com.group5.respirator;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.Window;
-import android.view.WindowManager;
 import android.view.animation.AlphaAnimation;
 import android.widget.Button;
 import android.widget.TextView;
@@ -15,9 +15,9 @@ import com.group5.respirator.Communication.Communication_akt;
 import com.group5.respirator.Entertainment.EntertainmentScreen;
 import com.group5.respirator.Settings.SettingsActivity;
 
-import java.sql.Time;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.TimeZone;
 
 public class MainActivity extends AppCompatActivity implements OnClickListener
 {
@@ -28,14 +28,14 @@ public class MainActivity extends AppCompatActivity implements OnClickListener
     private Button commnunicationButton;
     private Button settingsButton;
     private String date;
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(Calendar.getInstance().getTime());
+        //date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(Calendar.getInstance(TimeZone.getTimeZone("GMT")).getTime());
 
         Timeviewer = findViewById(R.id.timeView);
 
@@ -44,7 +44,16 @@ public class MainActivity extends AppCompatActivity implements OnClickListener
         commnunicationButton = findViewById(R.id.comBtn);
         settingsButton = findViewById(R.id.settingBtn);
 
-        Timeviewer.setText("Den aktuelle dato og tid\n"+date);
+        final Handler someHandler = new Handler(getMainLooper());
+        someHandler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                //Timeviewer.setText("Den aktuelle dato og tid\n"+date);
+                //Timeviewer.setText("Den aktuelle dato og tid\n"+new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.ENGLISH).format(new Date().getTime()));
+                Timeviewer.setText("Den aktuelle dato og tid\n" + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(Calendar.getInstance(TimeZone.getTimeZone("GMT")).getTime()));
+                someHandler.postDelayed(this, 1000);
+            }
+        }, 10);
 
         callButton.setOnClickListener(this);
         entertainmentButton.setOnClickListener(this);
