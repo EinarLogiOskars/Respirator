@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.group5.respirator.Preferences;
 import com.group5.respirator.R;
 
 
@@ -23,8 +24,8 @@ public class TouchFragment extends Fragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        getActivity().getTheme().applyStyle(new Preferences(getContext()).getFontStyle().getResId(), true);
         super.onCreate(savedInstanceState);
-
     }
 
     @Override

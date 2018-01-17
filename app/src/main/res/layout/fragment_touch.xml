@@ -39,7 +39,7 @@
         android:layout_marginTop="150dp"
         android:text="Standard styring"
         android:textColor="@android:color/white"
-        android:textSize="24sp"
+        android:textSize="?attr/font_small"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -51,7 +51,7 @@
         android:layout_marginTop="150dp"
         android:text="Hoved"
         android:textColor="@android:color/white"
-        android:textSize="24sp"
+        android:textSize="?attr/font_small"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -65,7 +65,7 @@
         android:layout_marginTop="46dp"
         android:text="1. Hvordan vil patientien bruge appen?"
         android:textColor="@android:color/white"
-        android:textSize="36sp"
+        android:textSize="?attr/font_xlarge"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

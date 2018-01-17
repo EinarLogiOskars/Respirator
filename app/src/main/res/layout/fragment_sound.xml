@@ -54,7 +54,7 @@
         android:layout_marginTop="148dp"
         android:text="Lower"
         android:textColor="@android:color/white"
-        android:textSize="24sp"
+        android:textSize="?attr/font_medium"
         app:layout_constraintEnd_toStartOf="@+id/textView4"
         app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,7 +68,7 @@
         android:layout_marginTop="148dp"
         android:text="Mute/Unmute"
         android:textColor="@android:color/white"
-        android:textSize="24sp"
+        android:textSize="?attr/font_medium"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -81,7 +81,7 @@
         android:layout_marginTop="150dp"
         android:text="Raise"
         android:textColor="@android:color/white"
-        android:textSize="24sp"
+        android:textSize="?attr/font_medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="parent" />
@@ -96,7 +96,7 @@
         android:layout_marginTop="46dp"
         android:text="2. Hvor høj skal alarmen være?"
         android:textColor="@android:color/white"
-        android:textSize="36sp"
+        android:textSize="?attr/font_xlarge"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
