@@ -7,6 +7,8 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.animation.AlphaAnimation;
 import android.widget.Button;
 import android.widget.TextView;
@@ -28,10 +30,10 @@ public class MainActivity extends AppCompatActivity implements OnClickListener
     private Button commnunicationButton;
     private Button settingsButton;
     private String date;
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
+        getTheme().applyStyle(new Preferences(this).getFontStyle().getResId(), true);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -50,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener
             public void run() {
                 //Timeviewer.setText("Den aktuelle dato og tid\n"+date);
                 //Timeviewer.setText("Den aktuelle dato og tid\n"+new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.ENGLISH).format(new Date().getTime()));
-                Timeviewer.setText("Den aktuelle dato og tid\n" + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(Calendar.getInstance(TimeZone.getTimeZone("GMT")).getTime()));
+                Timeviewer.setText(new SimpleDateFormat("yyyy-MM-dd\nHH:mm:ss").format(Calendar.getInstance(TimeZone.getTimeZone("GMT")).getTime()));
                 someHandler.postDelayed(this, 1000);
             }
         }, 10);
@@ -60,8 +62,9 @@ public class MainActivity extends AppCompatActivity implements OnClickListener
         commnunicationButton.setOnClickListener(this);
         settingsButton.setOnClickListener(this);
 
-//        requestWindowFeature(Window.FEATURE_NO_TITLE);
-//        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        //requestWindowFeature(Window.FEATURE_NO_TITLE);
+        //this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
     }
 
