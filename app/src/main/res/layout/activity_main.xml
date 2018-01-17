@@ -69,7 +69,7 @@
         android:layout_marginTop="30dp"
         android:textAlignment="center"
         android:textColor="@android:color/white"
-        android:textSize="27sp"
+        android:textSize="?attr/font_medium"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/settingBtn"
         app:layout_constraintStart_toStartOf="parent"
