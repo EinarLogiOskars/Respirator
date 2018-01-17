@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener
     private Button commnunicationButton;
     private Button settingsButton;
     private String date;
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
