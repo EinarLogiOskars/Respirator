@@ -39,7 +39,7 @@
             android:layout_marginTop="59dp"
             android:text='Start med "RESET".'
             android:textColor="@android:color/white"
-            android:textSize="30sp"
+            android:textSize="?attr/font_large"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/title1" />
@@ -53,7 +53,7 @@
             android:layout_marginTop="50dp"
             android:text="Hvordan fungere det?"
             android:textColor="@android:color/white"
-            android:textSize="36sp"
+            android:textSize="?attr/font_xlarge"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -67,7 +67,7 @@
             android:layout_marginTop="56dp"
             android:text="Derefter opsæt app ved at følge dem viste rækkefølge 1-4!"
             android:textColor="@android:color/white"
-            android:textSize="30sp"
+            android:textSize="?attr/font_large"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/title2" />

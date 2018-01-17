@@ -19,6 +19,8 @@ public class TextSizeFragment extends Fragment implements View.OnClickListener {
     Spinner fontSizeSpinner;
     Button setSizeBtn;
     Preferences prefs;
+    int resid;
+    Bundle b;
 
     public TextSizeFragment() {
         // Required empty public constructor
@@ -42,14 +44,15 @@ public class TextSizeFragment extends Fragment implements View.OnClickListener {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_text_size, container, false);
 
+        b = getArguments();
+        resid = b.getInt("resid");
+
         prefs = new Preferences(getContext());
 
         fontSizeSpinner = (Spinner) v.findViewById(R.id.font_styles);
         ArrayAdapter<Preferences.FontStyle> adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_spinner_item, Preferences.FontStyle.values());
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         fontSizeSpinner.setAdapter(adapter);
-
-        //fontSizeSpinner.setSelection(prefs.getFontStyle().ordinal());
 
         setSizeBtn = (Button) v.findViewById(R.id.setSizeBtn);
         setSizeBtn.setOnClickListener(this);
@@ -61,8 +64,12 @@ public class TextSizeFragment extends Fragment implements View.OnClickListener {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.setSizeBtn:
-                Toast.makeText(getContext(), "Blablabla", Toast.LENGTH_LONG).show();
                 prefs.setFontStyle((Preferences.FontStyle) fontSizeSpinner.getSelectedItem());
+                TextSizeFragment frag = new TextSizeFragment();
+                frag.setArguments(b);
+                getFragmentManager().beginTransaction()
+                        .replace(resid, frag)
+                        .commit();
                 break;
             default:
                 break;
