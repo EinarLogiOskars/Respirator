@@ -1,5 +1,6 @@
 package com.group5.respirator.Settings.Fragments;
 
+import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -22,6 +23,7 @@ public class TextSizeFragment extends Fragment implements View.OnClickListener {
     Spinner fontSizeSpinner;
     Button setSizeBtn;
     Preferences prefs;
+    changeTextSize mCallback;
     int resid;
     Bundle b;
 
@@ -58,21 +60,6 @@ public class TextSizeFragment extends Fragment implements View.OnClickListener {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         fontSizeSpinner.setAdapter(adapter);
 
-        /*
-        fontSizeSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                ((TextView) view).setTextColor(Color.WHITE); //Change selected text color
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-        */
-
-
         setSizeBtn = (Button) v.findViewById(R.id.setSizeBtn);
         setSizeBtn.setOnClickListener(this);
 
@@ -80,18 +67,32 @@ public class TextSizeFragment extends Fragment implements View.OnClickListener {
     }
 
     @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+
+        // This makes sure that the container activity has implemented
+        // the callback interface. If not, it throws an exception
+        try {
+            mCallback = (changeTextSize) activity;
+        } catch (ClassCastException e) {
+            throw new ClassCastException(activity.toString()
+                    + " must implement OnHeadlineSelectedListener");
+        }
+    }
+
+    @Override
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.setSizeBtn:
                 prefs.setFontStyle((Preferences.FontStyle) fontSizeSpinner.getSelectedItem());
-                TextSizeFragment frag = new TextSizeFragment();
-                frag.setArguments(b);
-                getFragmentManager().beginTransaction()
-                        .replace(resid, frag)
-                        .commit();
+                mCallback.textSizeChanged();
                 break;
             default:
                 break;
         }
+    }
+
+    public interface changeTextSize {
+        public void textSizeChanged();
     }
 }

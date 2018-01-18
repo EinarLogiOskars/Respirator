@@ -1,5 +1,6 @@
 package com.group5.respirator.Settings;
 
+import android.content.Intent;
 import android.support.v4.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
@@ -19,7 +20,7 @@ import com.group5.respirator.Settings.Fragments.SoundFragment;
 import com.group5.respirator.Settings.Fragments.TextSizeFragment;
 import com.group5.respirator.Settings.Fragments.TouchFragment;
 
-public class SettingsActivity extends AppCompatActivity implements View.OnClickListener{
+public class SettingsActivity extends AppCompatActivity implements View.OnClickListener, TextSizeFragment.changeTextSize{
 
     TouchFragment touchFrag;
     SoundFragment soundFrag;
@@ -127,5 +128,13 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
         alphaDown.setFillAfter(true);
         alphaUp.setFillAfter(true);
         v.startAnimation(alphaUp);
+    }
+
+    @Override
+    public void textSizeChanged() {
+        finish();
+        overridePendingTransition(0, 0);
+        startActivity(getIntent());
+        overridePendingTransition(0, 0);
     }
 }
