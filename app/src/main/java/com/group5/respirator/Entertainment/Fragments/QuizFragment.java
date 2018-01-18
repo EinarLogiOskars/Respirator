@@ -1,3 +1,7 @@
+/*
+ * Created by bijannegari.
+ */
+
 package com.group5.respirator.Entertainment.Fragments;
 
 import android.os.Bundle;
@@ -18,8 +22,7 @@ public class QuizFragment extends Fragment {
 
 
     public static QuizFragment newInstance() {
-        QuizFragment fragment = new QuizFragment();
-        return fragment;
+        return new QuizFragment();
     }
 
     @Override

@@ -1,3 +1,7 @@
+/*
+ * Created by bijannegari.
+ */
+
 package com.group5.respirator.Entertainment.Fragments;
 
 import android.os.Bundle;
@@ -16,8 +20,7 @@ public class ChessFragment extends Fragment {
     }
 
     public static ChessFragment newInstance() {
-        ChessFragment fragment = new ChessFragment();
-        return fragment;
+        return new ChessFragment();
     }
 
     @Override

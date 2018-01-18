@@ -1,8 +1,12 @@
+/*
+ *Author
+ */
 package org.tbadg.memory;
 
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.ContentValues;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.os.AsyncTask;
@@ -21,7 +25,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
-public class MemoryActivity extends Activity implements TextView.OnEditorActionListener {
+public class MemoryActivity extends Activity implements TextView.OnEditorActionListener, View.OnClickListener {
 
 
     @SuppressWarnings("unused")
@@ -41,6 +45,8 @@ public class MemoryActivity extends Activity implements TextView.OnEditorActionL
     private DatabaseHelper mDb = null;
 
     private ScoresFragment mScores = null;
+    Button callButton;
+
     //
     // Life-cycle methods
     //
@@ -52,7 +58,8 @@ public class MemoryActivity extends Activity implements TextView.OnEditorActionL
 
         mDb = new DatabaseHelper(this);
 
-
+        callButton = (Button) findViewById(R.id.callButton);
+        callButton.setOnClickListener((View.OnClickListener) this);
 
         //mAds = new Ads(findViewById(R.id.adView));
         //mAds.showAd();
@@ -270,6 +277,18 @@ public class MemoryActivity extends Activity implements TextView.OnEditorActionL
             new InsertScoreTask().execute(cv);
         }
     };
+
+    @Override
+    public void onClick(View view) {
+        Intent intent = null;
+        try {
+            intent = new Intent(this,
+                    Class.forName("com.group5.respirator.CallActivity"));
+            startActivity(intent);
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
 
     class InsertScoreTask extends AsyncTask<ContentValues, Void, Boolean> {
         @Override
