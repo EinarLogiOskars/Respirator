@@ -3,9 +3,8 @@ package com.group5.respirator;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import org.intellij.lang.annotations.JdkConstants;
 
-/**
+/*
  * Created by Einar Logi Óskarsson on 16/01/2018.
  */
 
@@ -18,11 +17,11 @@ public class Preferences {
         this.context = context;
     }
 
-    protected SharedPreferences open() {
+    private SharedPreferences open() {
         return context.getSharedPreferences("prefs", Context.MODE_PRIVATE);
     }
 
-    protected SharedPreferences.Editor edit() {
+    private SharedPreferences.Editor edit() {
         return open().edit();
     }
 

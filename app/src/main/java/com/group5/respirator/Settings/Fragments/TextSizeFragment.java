@@ -50,7 +50,8 @@ public class TextSizeFragment extends Fragment implements View.OnClickListener {
         prefs = new Preferences(getContext());
 
         fontSizeSpinner = (Spinner) v.findViewById(R.id.font_styles);
-        ArrayAdapter<Preferences.FontStyle> adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_spinner_item, Preferences.FontStyle.values());
+        ArrayAdapter<Preferences.FontStyle> adapter = new ArrayAdapter<>(getActivity(),
+                android.R.layout.simple_spinner_item, Preferences.FontStyle.values());
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         fontSizeSpinner.setAdapter(adapter);
 
