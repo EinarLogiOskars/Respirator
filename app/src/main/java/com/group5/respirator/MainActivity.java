@@ -1,5 +1,5 @@
 package com.group5.respirator;
-
+//Author Stuart Benjamin McLean s133018 and Bijan Negari s144261 //
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;

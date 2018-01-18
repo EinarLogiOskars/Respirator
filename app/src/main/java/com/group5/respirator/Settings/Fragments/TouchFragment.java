@@ -1,5 +1,5 @@
 package com.group5.respirator.Settings.Fragments;
-
+//Author Einar Logi s165226//
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;

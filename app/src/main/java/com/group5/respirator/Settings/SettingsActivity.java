@@ -1,5 +1,5 @@
 package com.group5.respirator.Settings;
-
+//Author Einar Logi s165226//
 import android.support.v4.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
