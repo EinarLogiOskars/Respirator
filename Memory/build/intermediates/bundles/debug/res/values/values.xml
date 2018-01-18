@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="beige">#FAEBD7</color>
+    <dimen name="activity_horizontal_margin">5dp</dimen>
+    <dimen name="activity_vertical_margin">5dp</dimen>
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="winner_padding">30dp</dimen>
+    <string name="app_name">Memory</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="best_score">Show Best Scores</string>
+    <string name="guesses">Guesses</string>
+    <string name="matches">Matches</string>
+    <string name="menu_about">Show About</string>
+    <string name="menu_help">Show Help</string>
+    <string name="menu_matches">Matches:</string>
+    <string name="menu_new">New Game</string>
+    <string name="menu_score">Best Scores</string>
+    <string name="msg_about">Running version:\u0020</string>
+    <string name="rank">Rank</string>
+    <string name="score">Score</string>
+    <string name="splash_image">Splash Image</string>
+    <string name="time">Time</string>
+    <string name="title_about">About Memory</string>
+    <string name="title_help">Help Memory</string>
+    <string name="url_help">https://github.com/TampaBayAndroid/Memory</string>
+    <string name="winner_popup">Winner!\nScore:\u0020</string>
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

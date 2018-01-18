@@ -67,6 +67,6 @@ public class SoundFragment extends Fragment implements View.OnClickListener {
             case R.id.muteBtn:
                 audioManager.adjustVolume(AudioManager.ADJUST_TOGGLE_MUTE, AudioManager.FLAG_PLAY_SOUND);
                 break;
-    }
+        }
     }
 }

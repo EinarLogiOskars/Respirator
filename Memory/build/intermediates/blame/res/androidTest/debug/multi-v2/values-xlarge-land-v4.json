@@ -1,0 +1,48 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\AndroidStudioProjects\\Respirator\\Memory\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-xlarge-land-v4\\values-xlarge-land-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Einar Logi Óskarsson\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-22.1.0.aar\\98a744a0db62b01232eff494d0cebcef\\res\\values-xlarge-land-v4\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "299",
+                        "endColumns": "63",
+                        "endOffsets": "358"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "63",
+                        "endOffsets": "114"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\AndroidStudioProjects\\Respirator\\Memory\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-xlarge-land-v4\\values-xlarge-land-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Einar Logi Óskarsson\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-22.1.0.aar\\98a744a0db62b01232eff494d0cebcef\\res\\values-xlarge-land-v4\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "299",
+                        "endColumns": "63",
+                        "endOffsets": "358"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "63",
+                        "endOffsets": "114"
+                    }
+                }
+            ]
+        }
+    ]
+}

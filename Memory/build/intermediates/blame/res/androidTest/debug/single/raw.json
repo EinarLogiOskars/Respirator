@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\AndroidStudioProjects\\Respirator\\Memory\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\start.ogg",
+        "source": "C:\\AndroidStudioProjects\\Respirator\\Memory\\build\\intermediates\\bundles\\debug\\res\\raw\\start.ogg"
+    },
+    {
+        "merged": "C:\\AndroidStudioProjects\\Respirator\\Memory\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\match.ogg",
+        "source": "C:\\AndroidStudioProjects\\Respirator\\Memory\\build\\intermediates\\bundles\\debug\\res\\raw\\match.ogg"
+    },
+    {
+        "merged": "C:\\AndroidStudioProjects\\Respirator\\Memory\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\no_match.ogg",
+        "source": "C:\\AndroidStudioProjects\\Respirator\\Memory\\build\\intermediates\\bundles\\debug\\res\\raw\\no_match.ogg"
+    },
+    {
+        "merged": "C:\\AndroidStudioProjects\\Respirator\\Memory\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\win.ogg",
+        "source": "C:\\AndroidStudioProjects\\Respirator\\Memory\\build\\intermediates\\bundles\\debug\\res\\raw\\win.ogg"
+    },
+    {
+        "merged": "C:\\AndroidStudioProjects\\Respirator\\Memory\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\music.mp3",
+        "source": "C:\\AndroidStudioProjects\\Respirator\\Memory\\build\\intermediates\\bundles\\debug\\res\\raw\\music.mp3"
+    },
+    {
+        "merged": "C:\\AndroidStudioProjects\\Respirator\\Memory\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\gtm_analytics",
+        "source": "C:\\Users\\Einar Logi Óskarsson\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-analytics-7.0.0.aar\\6cf7ecd8f725118aa44d7ae256a927b9\\res\\raw\\gtm_analytics"
+    },
+    {
+        "merged": "C:\\AndroidStudioProjects\\Respirator\\Memory\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\flip.ogg",
+        "source": "C:\\AndroidStudioProjects\\Respirator\\Memory\\build\\intermediates\\bundles\\debug\\res\\raw\\flip.ogg"
+    }
+]

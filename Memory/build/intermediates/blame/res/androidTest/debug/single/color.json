@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "C:\\AndroidStudioProjects\\Respirator\\Memory\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
+        "source": "C:\\Users\\Einar Logi Óskarsson\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-22.1.0.aar\\98a744a0db62b01232eff494d0cebcef\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "C:\\AndroidStudioProjects\\Respirator\\Memory\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_secondary_text_material_light.xml",
+        "source": "C:\\Users\\Einar Logi Óskarsson\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-22.1.0.aar\\98a744a0db62b01232eff494d0cebcef\\res\\color\\abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "C:\\AndroidStudioProjects\\Respirator\\Memory\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
+        "source": "C:\\Users\\Einar Logi Óskarsson\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-22.1.0.aar\\98a744a0db62b01232eff494d0cebcef\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "C:\\AndroidStudioProjects\\Respirator\\Memory\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_primary_text_material_dark.xml",
+        "source": "C:\\Users\\Einar Logi Óskarsson\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-22.1.0.aar\\98a744a0db62b01232eff494d0cebcef\\res\\color\\abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "C:\\AndroidStudioProjects\\Respirator\\Memory\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\switch_thumb_material_dark.xml",
+        "source": "C:\\Users\\Einar Logi Óskarsson\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-22.1.0.aar\\98a744a0db62b01232eff494d0cebcef\\res\\color\\switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "C:\\AndroidStudioProjects\\Respirator\\Memory\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_secondary_text_material_dark.xml",
+        "source": "C:\\Users\\Einar Logi Óskarsson\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-22.1.0.aar\\98a744a0db62b01232eff494d0cebcef\\res\\color\\abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "C:\\AndroidStudioProjects\\Respirator\\Memory\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\switch_thumb_material_light.xml",
+        "source": "C:\\Users\\Einar Logi Óskarsson\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-22.1.0.aar\\98a744a0db62b01232eff494d0cebcef\\res\\color\\switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "C:\\AndroidStudioProjects\\Respirator\\Memory\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_search_url_text.xml",
+        "source": "C:\\Users\\Einar Logi Óskarsson\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-22.1.0.aar\\98a744a0db62b01232eff494d0cebcef\\res\\color\\abc_search_url_text.xml"
+    },
+    {
+        "merged": "C:\\AndroidStudioProjects\\Respirator\\Memory\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\common_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Einar Logi Óskarsson\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-7.0.0.aar\\359725298869eedd75090e949a01014a\\res\\color\\common_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "C:\\AndroidStudioProjects\\Respirator\\Memory\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\common_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Einar Logi Óskarsson\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-7.0.0.aar\\359725298869eedd75090e949a01014a\\res\\color\\common_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "C:\\AndroidStudioProjects\\Respirator\\Memory\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\wallet_primary_text_holo_light.xml",
+        "source": "C:\\Users\\Einar Logi Óskarsson\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-wallet-7.0.0.aar\\11a6ff9ba171244f2f717f13304633b2\\res\\color\\wallet_primary_text_holo_light.xml"
+    },
+    {
+        "merged": "C:\\AndroidStudioProjects\\Respirator\\Memory\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_primary_text_material_light.xml",
+        "source": "C:\\Users\\Einar Logi Óskarsson\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-22.1.0.aar\\98a744a0db62b01232eff494d0cebcef\\res\\color\\abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "C:\\AndroidStudioProjects\\Respirator\\Memory\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\wallet_secondary_text_holo_dark.xml",
+        "source": "C:\\Users\\Einar Logi Óskarsson\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-wallet-7.0.0.aar\\11a6ff9ba171244f2f717f13304633b2\\res\\color\\wallet_secondary_text_holo_dark.xml"
+    }
+]
