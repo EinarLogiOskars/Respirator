@@ -1,3 +1,7 @@
+/*
+ * This code is borrowed from github by unknown author
+ */
+
 package org.tbadg.memory;
 
 import android.app.ListFragment;

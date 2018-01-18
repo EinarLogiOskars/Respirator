@@ -1,3 +1,7 @@
+/*
+ * Author: Bijan Negari s144261
+ */
+
 package com.example.bijannegari.galgespilprojekt;
 
 import android.support.v4.app.Fragment;

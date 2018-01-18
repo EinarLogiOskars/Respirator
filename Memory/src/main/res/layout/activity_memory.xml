@@ -1,3 +1,6 @@
+<!--
+   This code is borrowed from github by an unknown author
+      -->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -45,7 +48,7 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/callBtn3"
+            android:id="@+id/callButton"
             android:layout_width="1281dp"
             android:layout_height="100dp"
             android:layout_alignParentBottom="true"

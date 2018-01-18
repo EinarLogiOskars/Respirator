@@ -1,3 +1,7 @@
+/*
+ * Author: Bijan Negari s144261, Einar Logi s165226, Stuart Mclean s133018
+ */
+
 package com.group5.respirator;
 
 import android.content.Intent;

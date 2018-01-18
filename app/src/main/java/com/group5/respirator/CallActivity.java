@@ -1,3 +1,7 @@
+/*
+ * Author: Bijan Negari s144261
+ */
+
 package com.group5.respirator;
 
 import android.content.Context;
@@ -37,6 +41,7 @@ public class CallActivity extends AppCompatActivity implements OnClickListener {
             // Call effect, sound, something....?
             Context context = getApplicationContext();
             CharSequence text = "Call confirmed - Calling a nurse";
+            // SHORT = 2 sek. , LONG = 3.5 sek.
             int duration = Toast.LENGTH_LONG;
             Toast toast = Toast.makeText(context, text, duration);
             toast.show();

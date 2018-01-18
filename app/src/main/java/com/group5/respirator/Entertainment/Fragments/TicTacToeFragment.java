@@ -1,3 +1,7 @@
+/*
+ * Author: Bijan Negari s144261
+ */
+
 package com.group5.respirator.Entertainment.Fragments;
 
 import android.os.Bundle;
