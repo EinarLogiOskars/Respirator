@@ -10,4 +10,5 @@
     <color name="BackgroundGrey">#717171</color>
     <color name="ButtonBlue">#6a9cfd</color>
     <color name="DisplayGrey">#e9eaed</color>
+    <color name="settingsBtns">#a2a3bb</color>
 </resources>

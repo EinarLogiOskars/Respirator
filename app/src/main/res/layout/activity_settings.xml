@@ -63,10 +63,14 @@
             android:id="@+id/touchSettingsBtn"
             android:layout_width="187dp"
             android:layout_height="128dp"
-
+            android:drawableTop="@drawable/ic_touch_app_black_80dp"
+            android:drawableTint="@android:color/white"
             android:layout_marginBottom="36dp"
             android:layout_marginStart="170dp"
-            android:background="@drawable/touch"
+            android:background="@drawable/setting1"
+            android:text="Styring"
+            android:textColor="@android:color/white"
+            android:textSize="?attr/font_medium"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -74,10 +78,14 @@
             android:id="@+id/soundBtn"
             android:layout_width="187dp"
             android:layout_height="126dp"
-
+            android:drawableTop="@drawable/ic_volume_up_black_80dp"
+            android:drawableTint="@android:color/white"
             android:layout_marginBottom="36dp"
             android:layout_marginStart="60dp"
-            android:background="@drawable/sound"
+            android:background="@drawable/setting1"
+            android:text="Lydstyrke"
+            android:textColor="@android:color/white"
+            android:textSize="?attr/font_medium"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/touchSettingsBtn" />
 
@@ -85,10 +93,14 @@
             android:id="@+id/textSizeBtn"
             android:layout_width="187dp"
             android:layout_height="126dp"
-
+            android:drawableTop="@drawable/ic_text_fields_black_80dp"
+            android:drawableTint="@android:color/white"
             android:layout_marginBottom="36dp"
             android:layout_marginStart="60dp"
-            android:background="@drawable/text_size"
+            android:background="@drawable/setting1"
+            android:text="Størrelse"
+            android:textColor="@android:color/white"
+            android:textSize="?attr/font_medium"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/soundBtn" />
 
@@ -96,10 +108,14 @@
             android:id="@+id/languageBtn"
             android:layout_width="187dp"
             android:layout_height="126dp"
-
+            android:drawableTop="@drawable/ic_language_black_80dp"
+            android:drawableTint="@android:color/white"
             android:layout_marginBottom="36dp"
             android:layout_marginStart="60dp"
-            android:background="@drawable/sprog"
+            android:background="@drawable/setting1"
+            android:text="Sprog"
+            android:textColor="@android:color/white"
+            android:textSize="?attr/font_medium"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textSizeBtn" />
 
