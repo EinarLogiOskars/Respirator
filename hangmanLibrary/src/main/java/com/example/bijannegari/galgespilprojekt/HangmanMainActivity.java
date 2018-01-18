@@ -1,18 +1,13 @@
 package com.example.bijannegari.galgespilprojekt;
 
+import android.annotation.SuppressLint;
 import android.os.AsyncTask;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AlertDialog;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.content.Intent;
 
 public class HangmanMainActivity extends Fragment implements View.OnClickListener {
 
@@ -31,8 +26,8 @@ public class HangmanMainActivity extends Fragment implements View.OnClickListene
         b = getArguments();
         resid = b.getInt("resid");
 
-        button1 = (Button) v.findViewById(R.id.button1);
-        highscoreButton = (Button) v.findViewById(R.id.highscoreButton);
+        button1 = v.findViewById(R.id.button1);
+        highscoreButton = v.findViewById(R.id.highscoreButton);
 
         button1.setOnClickListener(this);
         highscoreButton.setOnClickListener(this);
@@ -61,6 +56,7 @@ public class HangmanMainActivity extends Fragment implements View.OnClickListene
     }
 
 
+    // @SuppressLint("StaticFieldLeak")
     private class AsyncTaskRunner extends AsyncTask<String, String, String>
     {
         private String response;
