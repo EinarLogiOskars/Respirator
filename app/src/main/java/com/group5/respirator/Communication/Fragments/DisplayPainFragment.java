@@ -1,5 +1,5 @@
 package com.group5.respirator.Communication.Fragments;
-
+//Author Stuart Benjamin McLean s133018//
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
