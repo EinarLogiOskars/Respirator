@@ -20,8 +20,8 @@ dependencies {
 
 def major = 1
 def minor = 5
-def rev = "git rev-list master --first-parent --count".execute().text.toInteger()
-def verName = "${major}.${minor}.${rev}"
+//def rev = "git rev-list master --first-parent --count".execute().text.toInteger()
+//def verName = "${major}.${minor}.${rev}"
 
 android {
     compileSdkVersion 21
@@ -32,8 +32,8 @@ android {
         minSdkVersion 14
         targetSdkVersion 21
 
-        versionCode sprintf("%d%02d%04d", major, minor, rev).toInteger()
-        versionName verName
+//        versionCode sprintf("%d%02d%04d", major, minor, rev).toInteger()
+//        versionName verName
     }
 
     signingConfigs {
