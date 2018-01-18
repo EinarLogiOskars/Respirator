@@ -19,6 +19,8 @@ import com.group5.respirator.Settings.SettingsActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
 import java.util.TimeZone;
 
 public class MainActivity extends AppCompatActivity implements OnClickListener
@@ -37,7 +39,6 @@ public class MainActivity extends AppCompatActivity implements OnClickListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(Calendar.getInstance(TimeZone.getTimeZone("GMT")).getTime());
 
         Timeviewer = findViewById(R.id.timeView);
 
@@ -50,8 +51,6 @@ public class MainActivity extends AppCompatActivity implements OnClickListener
         someHandler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                //Timeviewer.setText("Den aktuelle dato og tid\n"+date);
-                //Timeviewer.setText("Den aktuelle dato og tid\n"+new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.ENGLISH).format(new Date().getTime()));
                 Timeviewer.setText(new SimpleDateFormat("yyyy-MM-dd\nHH:mm:ss").format(Calendar.getInstance(TimeZone.getTimeZone("GMT")).getTime()));
                 someHandler.postDelayed(this, 1000);
             }
@@ -63,8 +62,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener
         settingsButton.setOnClickListener(this);
 
 
-        //requestWindowFeature(Window.FEATURE_NO_TITLE);
-        //this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
     }
 

@@ -1,3 +1,7 @@
+/*
+ * Created by bijannegari.
+ */
+
 package com.group5.respirator.Entertainment.Fragments;
 
 import android.os.Bundle;
@@ -17,8 +21,7 @@ public class TicTacToeFragment extends Fragment {
 
 
     public static TicTacToeFragment newInstance() {
-        TicTacToeFragment fragment = new TicTacToeFragment();
-        return fragment;
+        return new TicTacToeFragment();
     }
 
     @Override

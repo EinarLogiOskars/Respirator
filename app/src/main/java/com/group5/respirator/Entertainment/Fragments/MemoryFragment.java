@@ -1,3 +1,7 @@
+/*
+ * Created by bijannegari.
+ */
+
 package com.group5.respirator.Entertainment.Fragments;
 
 import android.os.Bundle;
@@ -17,8 +21,7 @@ public class MemoryFragment extends Fragment {
 
 
     public static MemoryFragment newInstance() {
-        MemoryFragment fragment = new MemoryFragment();
-        return fragment;
+        return new MemoryFragment();
     }
 
     @Override

@@ -1,12 +1,13 @@
+/*
+ * Created by bijannegari.
+ */
+
 package com.group5.respirator.Entertainment;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.speech.tts.TextToSpeech;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
@@ -14,7 +15,6 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.anup.tictactoe.Board;
 import com.example.bijannegari.galgespilprojekt.HangmanMainActivity;
@@ -64,12 +64,12 @@ public class EntertainmentScreen extends AppCompatActivity implements View.OnCli
         memoryFrag = MemoryFragment.newInstance();
         chessFrag = ChessFragment.newInstance();
 
-        callButton = (Button) findViewById(R.id.callButton);
-        hangmanButton = (Button) findViewById(R.id.hangmanButton);
-        tictactoeButton = (Button) findViewById(R.id.tictactoeButton);
-        memoryButton = (Button) findViewById(R.id.memoryButton);
-        homeBtn = (ImageView) findViewById(R.id.homeBtn);
-        entertainmentTitle = (TextView) findViewById(R.id.entertainmentTitle);
+        callButton = findViewById(R.id.callButton);
+        hangmanButton =  findViewById(R.id.hangmanButton);
+        tictactoeButton =  findViewById(R.id.tictactoeButton);
+        memoryButton = findViewById(R.id.memoryButton);
+        homeBtn = findViewById(R.id.homeBtn);
+        entertainmentTitle = findViewById(R.id.entertainmentTitle);
 
         hangmanButton.setOnClickListener(this);
         tictactoeButton.setOnClickListener(this);

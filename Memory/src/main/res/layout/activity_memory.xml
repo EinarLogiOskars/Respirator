@@ -45,7 +45,7 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/callBtn3"
+            android:id="@+id/callButton"
             android:layout_width="1281dp"
             android:layout_height="100dp"
             android:layout_alignParentBottom="true"
