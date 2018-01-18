@@ -1,6 +1,5 @@
 package com.group5.respirator.Communication.Fragments;
-
-
+//Author Stuart Benjamin McLean s133018//
 import android.graphics.Color;
 import android.graphics.LightingColorFilter;
 import android.os.Bundle;
