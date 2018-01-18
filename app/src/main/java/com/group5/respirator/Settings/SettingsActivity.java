@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.view.animation.AlphaAnimation;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -41,7 +42,6 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
         getTheme().applyStyle(new Preferences(this).getFontStyle().getResId(), true);
         super.onCreate(savedInstanceState);
 
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_settings);
@@ -81,7 +81,7 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
                 if (textView2.getVisibility() == View.VISIBLE) {
                     textView2.setVisibility(View.GONE);
                 }
-
+                QuickTapButton(view);
                 fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragment_container, touchFrag);
                 fragmentTransaction.commit();
@@ -90,7 +90,7 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
                 if (textView2.getVisibility() == View.VISIBLE) {
                     textView2.setVisibility(View.GONE);
                 }
-
+                QuickTapButton(view);
                 fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragment_container, soundFrag);
                 fragmentTransaction.commit();
@@ -99,7 +99,7 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
                 if (textView2.getVisibility() == View.VISIBLE) {
                     textView2.setVisibility(View.GONE);
                 }
-
+                QuickTapButton(view);
                 fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragment_container, textSizeFrag);
                 fragmentTransaction.commit();
@@ -108,7 +108,7 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
                 if (textView2.getVisibility() == View.VISIBLE) {
                     textView2.setVisibility(View.GONE);
                 }
-
+                QuickTapButton(view);
                 fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragment_container, langFrag);
                 fragmentTransaction.commit();
@@ -117,5 +117,15 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
                 finish();
                 break;
         }
+    }
+
+    public void QuickTapButton(View v) {
+        AlphaAnimation alphaDown = new AlphaAnimation(1.0f, 0.3f);
+        AlphaAnimation alphaUp = new AlphaAnimation(0.3f, 1.0f);
+        alphaDown.setDuration(1000);
+        alphaUp.setDuration(500);
+        alphaDown.setFillAfter(true);
+        alphaUp.setFillAfter(true);
+        v.startAnimation(alphaUp);
     }
 }

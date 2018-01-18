@@ -58,6 +58,7 @@ public class TextSizeFragment extends Fragment implements View.OnClickListener {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         fontSizeSpinner.setAdapter(adapter);
 
+        /*
         fontSizeSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -69,6 +70,8 @@ public class TextSizeFragment extends Fragment implements View.OnClickListener {
 
             }
         });
+        */
+
 
         setSizeBtn = (Button) v.findViewById(R.id.setSizeBtn);
         setSizeBtn.setOnClickListener(this);
