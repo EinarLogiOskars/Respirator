@@ -146,7 +146,7 @@ public class DisplayPainFragment extends Fragment implements View.OnClickListene
         }
     }
 
-    private class Drawboard extends View {
+    private class Drawboard extends View { /* Meget af denne metode er lånt fra Jacob Nordfalk metode fra hans eksempler*/
 
         ArrayList<Point> touchPoint = new ArrayList<Point>();
         Paint paintType = new Paint();
