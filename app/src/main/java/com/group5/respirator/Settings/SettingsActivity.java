@@ -1,17 +1,14 @@
 package com.group5.respirator.Settings;
 
-import android.content.Intent;
 import android.support.v4.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.AlphaAnimation;
 import android.widget.Button;
 import android.widget.TextView;
-
 
 import com.group5.respirator.Preferences;
 import com.group5.respirator.R;
@@ -19,6 +16,10 @@ import com.group5.respirator.Settings.Fragments.LanguageFragment;
 import com.group5.respirator.Settings.Fragments.SoundFragment;
 import com.group5.respirator.Settings.Fragments.TextSizeFragment;
 import com.group5.respirator.Settings.Fragments.TouchFragment;
+
+/*
+ * Created by Einar Logi Óskarsson.
+ */
 
 public class SettingsActivity extends AppCompatActivity implements View.OnClickListener, TextSizeFragment.changeTextSize{
 

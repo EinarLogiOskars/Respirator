@@ -5,7 +5,7 @@ import android.content.SharedPreferences;
 
 
 /*
- * Created by Einar Logi Óskarsson on 16/01/2018.
+ * Created by Einar Logi Óskarsson.
  */
 
 public class Preferences {

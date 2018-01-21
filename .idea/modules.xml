@@ -3,8 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Memory/Memory.iml" filepath="$PROJECT_DIR$/Memory/Memory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Respirator.iml" filepath="$PROJECT_DIR$/Respirator.iml" />
       <module fileurl="file://C:\Users\Stuart\AndroidStudioProjects\RespiratorFinalv2\Respirator.iml" filepath="C:\Users\Stuart\AndroidStudioProjects\RespiratorFinalv2\Respirator.iml" />
-      <module fileurl="file://$PROJECT_DIR$/RespiratorFinalv2.iml" filepath="$PROJECT_DIR$/RespiratorFinalv2.iml" />
+      <module fileurl="file://C:\AndroidStudioProjects\Respirator\RespiratorFinalv2.iml" filepath="C:\AndroidStudioProjects\Respirator\RespiratorFinalv2.iml" />
       <module fileurl="file://C:\Users\Stuart\AndroidStudioProjects\RespiratorFinalv2\.idea\Respirator_GruppeProjekt.iml" filepath="C:\Users\Stuart\AndroidStudioProjects\RespiratorFinalv2\.idea\Respirator_GruppeProjekt.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tic-Tac-Toe---Android/Tic-Tac-Toe---Android.iml" filepath="$PROJECT_DIR$/Tic-Tac-Toe---Android/Tic-Tac-Toe---Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />

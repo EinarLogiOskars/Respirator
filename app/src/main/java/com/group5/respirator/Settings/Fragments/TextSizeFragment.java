@@ -17,6 +17,9 @@ import android.widget.Toast;
 import com.group5.respirator.Preferences;
 import com.group5.respirator.R;
 
+/*
+ * Created by Einar Logi Óskarsson.
+ */
 
 public class TextSizeFragment extends Fragment implements View.OnClickListener {
 

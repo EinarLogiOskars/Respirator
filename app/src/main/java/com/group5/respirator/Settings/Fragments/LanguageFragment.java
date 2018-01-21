@@ -9,6 +9,9 @@ import android.view.ViewGroup;
 import com.group5.respirator.Preferences;
 import com.group5.respirator.R;
 
+/*
+ * Created by Einar Logi Óskarsson.
+ */
 
 public class LanguageFragment extends Fragment {
 

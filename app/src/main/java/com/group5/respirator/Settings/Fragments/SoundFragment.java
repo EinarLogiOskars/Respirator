@@ -12,6 +12,9 @@ import android.widget.Button;
 import com.group5.respirator.Preferences;
 import com.group5.respirator.R;
 
+/*
+ * Created by Einar Logi Óskarsson.
+ */
 
 public class SoundFragment extends Fragment implements View.OnClickListener {
 
